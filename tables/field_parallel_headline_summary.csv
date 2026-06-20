@@ -1,0 +1,10 @@
+quantity,Massachusetts field case,Lovelock Valley field case
+Field setting and support,Fractured bedrock; 5.8--36.6 m radial support,Basin fill aquifer; 0.6--9.6 mi radial support
+Observation wells / response records,12 / 420,7 / 520
+Observation design,Retained constant rate drawdown subset,Pumping and recovery superposition with 0.05 ft detection offset
+Pooled $SD_{\epsilon}$ in pathway order,0.166 / 0.164 / 0.062 / 0.035,0.246 / 0.294 / 0.174 / 0.174
+Wells preferred by BIC in interpretation order,2 / 2 / 3 / 5,2 / 0 / 5 / 0
+Transmissivity COV in pathway order,0.58 / 0.78 / 0.46 / 0.81,3.40 / 3.70 / 1.83 / 4.77
+Storage COV in pathway order,2.05 / 1.71 / 1.74 / 1.54,0.89 / 0.86 / 0.95 / 10.21
+Leakage and boundary support,Selective leakage/boundary support,BIC preference concentrated in models without leakage
+Validation scope and inference,Spatial LOO tested; transfer support mixed,Field consistency check available for the processed regional data set

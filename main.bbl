@@ -1,0 +1,491 @@
+\begin{thebibliography}{56}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\href}[2]{#2}
+\providecommand{\path}[1]{#1}
+\providecommand{\DOIprefix}{doi:}
+\providecommand{\ArXivprefix}{arXiv:}
+\providecommand{\URLprefix}{URL: }
+\providecommand{\Pubmedprefix}{pmid:}
+\providecommand{\doi}[1]{\href{http://dx.doi.org/#1}{\path{#1}}}
+\providecommand{\Pubmed}[1]{\href{pmid:#1}{\path{#1}}}
+\providecommand{\bibinfo}[2]{#2}
+\ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
+%Type = Article
+\bibitem[{Akaike(1974)}]{akaike1974}
+\bibinfo{author}{Akaike, H.}, \bibinfo{year}{1974}.
+\newblock \bibinfo{title}{A new look at the statistical model identification}.
+\newblock \bibinfo{journal}{IEEE Transactions on Automatic Control}
+  \bibinfo{volume}{19}, \bibinfo{pages}{716--723}.
+\newblock \DOIprefix\doi{10.1109/TAC.1974.1100705}.
+%Type = Book
+\bibitem[{Anderson et~al.(2015)Anderson, Woessner and Hunt}]{anderson2015}
+\bibinfo{author}{Anderson, M.P.}, \bibinfo{author}{Woessner, W.W.},
+  \bibinfo{author}{Hunt, R.J.}, \bibinfo{year}{2015}.
+\newblock \bibinfo{title}{Applied Groundwater Modeling: Simulation of Flow and
+  Advective Transport}.
+\newblock \bibinfo{edition}{2} ed., \bibinfo{publisher}{Academic Press}.
+%Type = Article
+\bibitem[{Bakker et~al.(2016)Bakker, Post, Langevin, Hughes, White, Starn and
+  Fienen}]{bakker2016}
+\bibinfo{author}{Bakker, M.}, \bibinfo{author}{Post, V.},
+  \bibinfo{author}{Langevin, C.D.}, \bibinfo{author}{Hughes, J.D.},
+  \bibinfo{author}{White, J.T.}, \bibinfo{author}{Starn, J.J.},
+  \bibinfo{author}{Fienen, M.N.}, \bibinfo{year}{2016}.
+\newblock \bibinfo{title}{Scripting {MODFLOW} model development using {Python}
+  and {FloPy}}.
+\newblock \bibinfo{journal}{Groundwater} \bibinfo{volume}{54},
+  \bibinfo{pages}{733--739}.
+\newblock \DOIprefix\doi{10.1111/gwat.12413}.
+%Type = Article
+\bibitem[{Barker(1988)}]{barker1988}
+\bibinfo{author}{Barker, J.A.}, \bibinfo{year}{1988}.
+\newblock \bibinfo{title}{A generalized radial flow model for hydraulic tests
+  in fractured rock}.
+\newblock \bibinfo{journal}{Water Resources Research} \bibinfo{volume}{24},
+  \bibinfo{pages}{1796--1804}.
+\newblock \DOIprefix\doi{10.1029/WR024i010p01796}.
+%Type = Book
+\bibitem[{Bear(1979)}]{bear1979}
+\bibinfo{author}{Bear, J.}, \bibinfo{year}{1979}.
+\newblock \bibinfo{title}{Hydraulics of Groundwater}.
+\newblock \bibinfo{publisher}{McGraw-Hill}, \bibinfo{address}{New York}.
+%Type = Article
+\bibitem[{Beckie and Harvey(2002)}]{beckie_harvey2002}
+\bibinfo{author}{Beckie, R.}, \bibinfo{author}{Harvey, C.F.},
+  \bibinfo{year}{2002}.
+\newblock \bibinfo{title}{What does a slug test measure: An investigation of
+  instrument response and the effects of heterogeneity}.
+\newblock \bibinfo{journal}{Water Resources Research} \bibinfo{volume}{38},
+  \bibinfo{pages}{1290}.
+\newblock \DOIprefix\doi{10.1029/2001WR001072}.
+%Type = Article
+\bibitem[{Beven and Binley(1992)}]{beven_binley1992}
+\bibinfo{author}{Beven, K.}, \bibinfo{author}{Binley, A.},
+  \bibinfo{year}{1992}.
+\newblock \bibinfo{title}{The future of distributed models: Model calibration
+  and uncertainty prediction}.
+\newblock \bibinfo{journal}{Hydrological Processes} \bibinfo{volume}{6},
+  \bibinfo{pages}{279--298}.
+\newblock \DOIprefix\doi{10.1002/hyp.3360060305}.
+%Type = Article
+\bibitem[{Boulton(1954)}]{boulton1954}
+\bibinfo{author}{Boulton, N.S.}, \bibinfo{year}{1954}.
+\newblock \bibinfo{title}{The drawdown of the water-table under non-steady
+  conditions near a pumped well in an unconfined formation}.
+\newblock \bibinfo{journal}{Proceedings of the Institution of Civil Engineers}
+  \bibinfo{volume}{3}, \bibinfo{pages}{564--579}.
+\newblock \DOIprefix\doi{10.1680/ipeds.1954.12586}.
+%Type = Article
+\bibitem[{Carrera and Neuman(1986)}]{carrera_neuman1986}
+\bibinfo{author}{Carrera, J.}, \bibinfo{author}{Neuman, S.P.},
+  \bibinfo{year}{1986}.
+\newblock \bibinfo{title}{Estimation of aquifer parameters under transient and
+  steady state conditions: 1. maximum likelihood method incorporating prior
+  information}.
+\newblock \bibinfo{journal}{Water Resources Research} \bibinfo{volume}{22},
+  \bibinfo{pages}{199--210}.
+\newblock \DOIprefix\doi{10.1029/WR022i002p00199}.
+%Type = Inproceedings
+\bibitem[{Cho et~al.(2004)Cho, Fiacco and Daly}]{cho2004pumping}
+\bibinfo{author}{Cho, H.J.}, \bibinfo{author}{Fiacco, Jr., R.J.},
+  \bibinfo{author}{Daly, M.H.}, \bibinfo{year}{2004}.
+\newblock \bibinfo{title}{Pumping test analysis in a fractured crystalline
+  bedrock}, in: \bibinfo{booktitle}{Proceedings of the 2004 {US EPA}/{National
+  Ground Water Association} Fractured Rock Conference: State of the Science and
+  Measuring Success in Remediation}, pp. \bibinfo{pages}{161--172}.
+%Type = Article
+\bibitem[{Cho et~al.(2008)Cho, Fiacco and Daly}]{cho2008characterization}
+\bibinfo{author}{Cho, H.J.}, \bibinfo{author}{Fiacco, Jr., R.J.},
+  \bibinfo{author}{Daly, M.H.}, \bibinfo{year}{2008}.
+\newblock \bibinfo{title}{Characterization of crystalline bedrock contaminated
+  by dense nonaqueous liquid}.
+\newblock \bibinfo{journal}{Ground Water Monitoring \& Remediation}
+  \bibinfo{volume}{28}, \bibinfo{pages}{49--59}.
+%Type = Article
+\bibitem[{Cooper and Jacob(1946)}]{cooper_jacob1946}
+\bibinfo{author}{Cooper, H.H.}, \bibinfo{author}{Jacob, C.E.},
+  \bibinfo{year}{1946}.
+\newblock \bibinfo{title}{A generalized graphical method for evaluating
+  formation constants and summarizing well-field history}.
+\newblock \bibinfo{journal}{Eos, Transactions American Geophysical Union}
+  \bibinfo{volume}{27}, \bibinfo{pages}{526--534}.
+\newblock \DOIprefix\doi{10.1029/TR027i004p00526}.
+%Type = Book
+\bibitem[{Dagan(1989)}]{dagan1989}
+\bibinfo{author}{Dagan, G.}, \bibinfo{year}{1989}.
+\newblock \bibinfo{title}{Flow and Transport in Porous Formations}.
+\newblock \bibinfo{publisher}{Springer}, \bibinfo{address}{Berlin}.
+\newblock \DOIprefix\doi{10.1007/978-3-642-75015-1}.
+%Type = Book
+\bibitem[{Doherty(2015)}]{doherty2015}
+\bibinfo{author}{Doherty, J.}, \bibinfo{year}{2015}.
+\newblock \bibinfo{title}{Calibration and Uncertainty Analysis for Complex
+  Environmental Models}.
+\newblock \bibinfo{publisher}{Watermark Numerical Computing}.
+%Type = Techreport
+\bibitem[{Fienen et~al.(2025)Fienen, Schachter and Hunt}]{fienen2025}
+\bibinfo{author}{Fienen, M.N.}, \bibinfo{author}{Schachter, L.A.},
+  \bibinfo{author}{Hunt, R.J.}, \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{A model uncertainty quantification protocol for
+  evaluating the value of observation data}.
+\newblock \bibinfo{type}{Scientific Investigations Report}
+  \bibinfo{number}{2025-5007}. U.S. Geological Survey.
+\newblock \DOIprefix\doi{10.3133/sir20255007}.
+%Type = Book
+\bibitem[{Freeze and Cherry(1979)}]{freeze_cherry1979}
+\bibinfo{author}{Freeze, R.A.}, \bibinfo{author}{Cherry, J.A.},
+  \bibinfo{year}{1979}.
+\newblock \bibinfo{title}{Groundwater}.
+\newblock \bibinfo{publisher}{Prentice Hall}, \bibinfo{address}{Englewood
+  Cliffs, New Jersey}.
+%Type = Book
+\bibitem[{Gelhar(1993)}]{gelhar1993}
+\bibinfo{author}{Gelhar, L.W.}, \bibinfo{year}{1993}.
+\newblock \bibinfo{title}{Stochastic Subsurface Hydrology}.
+\newblock \bibinfo{publisher}{Prentice Hall}, \bibinfo{address}{Englewood
+  Cliffs, New Jersey}.
+%Type = Incollection
+\bibitem[{Guillaume et~al.(2016)Guillaume, Hunt, Comunian, Fu and
+  Blakers}]{guillaume2016}
+\bibinfo{author}{Guillaume, J.H.A.}, \bibinfo{author}{Hunt, R.J.},
+  \bibinfo{author}{Comunian, A.}, \bibinfo{author}{Fu, B.},
+  \bibinfo{author}{Blakers, R.S.}, \bibinfo{year}{2016}.
+\newblock \bibinfo{title}{Methods for exploring uncertainty in groundwater
+  management predictions}, in: \bibinfo{booktitle}{Integrated Groundwater
+  Management}. \bibinfo{publisher}{Springer}, pp. \bibinfo{pages}{711--737}.
+\newblock \DOIprefix\doi{10.1007/978-3-319-23576-9_28}.
+%Type = Article
+\bibitem[{Gupta et~al.(2012)Gupta, Clark, Vrugt, Abramowitz and Ye}]{gupta2012}
+\bibinfo{author}{Gupta, H.V.}, \bibinfo{author}{Clark, M.P.},
+  \bibinfo{author}{Vrugt, J.A.}, \bibinfo{author}{Abramowitz, G.},
+  \bibinfo{author}{Ye, M.}, \bibinfo{year}{2012}.
+\newblock \bibinfo{title}{Towards a comprehensive assessment of model
+  structural adequacy}.
+\newblock \bibinfo{journal}{Water Resources Research} \bibinfo{volume}{48},
+  \bibinfo{pages}{W08301}.
+\newblock \DOIprefix\doi{10.1029/2011WR011044}.
+%Type = Article
+\bibitem[{Hantush and Jacob(1955)}]{hantush_jacob1955}
+\bibinfo{author}{Hantush, M.S.}, \bibinfo{author}{Jacob, C.E.},
+  \bibinfo{year}{1955}.
+\newblock \bibinfo{title}{Non-steady radial flow in an infinite leaky aquifer}.
+\newblock \bibinfo{journal}{Eos, Transactions American Geophysical Union}
+  \bibinfo{volume}{36}, \bibinfo{pages}{95--100}.
+\newblock \DOIprefix\doi{10.1029/TR036i001p00095}.
+%Type = Book
+\bibitem[{Hill and Tiedeman(2007)}]{hill_tiedeman2007}
+\bibinfo{author}{Hill, M.C.}, \bibinfo{author}{Tiedeman, C.R.},
+  \bibinfo{year}{2007}.
+\newblock \bibinfo{title}{Effective Groundwater Model Calibration: With
+  Analysis of Data, Sensitivities, Predictions, and Uncertainty}.
+\newblock \bibinfo{publisher}{Wiley}.
+%Type = Article
+\bibitem[{Hoeting et~al.(1999)Hoeting, Madigan, Raftery and
+  Volinsky}]{hoeting1999}
+\bibinfo{author}{Hoeting, J.A.}, \bibinfo{author}{Madigan, D.},
+  \bibinfo{author}{Raftery, A.E.}, \bibinfo{author}{Volinsky, C.T.},
+  \bibinfo{year}{1999}.
+\newblock \bibinfo{title}{{Bayesian} model averaging: A tutorial}.
+\newblock \bibinfo{journal}{Statistical Science} \bibinfo{volume}{14},
+  \bibinfo{pages}{382--417}.
+\newblock \DOIprefix\doi{10.1214/ss/1009212519}.
+%Type = Article
+\bibitem[{Illman et~al.(2009)Illman, Liu, Takeuchi, Yeh, Ando and
+  Saegusa}]{illman2009}
+\bibinfo{author}{Illman, W.A.}, \bibinfo{author}{Liu, X.},
+  \bibinfo{author}{Takeuchi, S.}, \bibinfo{author}{Yeh, T.C.J.},
+  \bibinfo{author}{Ando, K.}, \bibinfo{author}{Saegusa, H.},
+  \bibinfo{year}{2009}.
+\newblock \bibinfo{title}{Hydraulic tomography in fractured granite: Mizunami
+  underground research site, japan}.
+\newblock \bibinfo{journal}{Water Resources Research} \bibinfo{volume}{45},
+  \bibinfo{pages}{W01406}.
+\newblock \DOIprefix\doi{10.1029/2007WR006715}.
+%Type = Article
+\bibitem[{Kitanidis(1995)}]{kitanidis1995}
+\bibinfo{author}{Kitanidis, P.K.}, \bibinfo{year}{1995}.
+\newblock \bibinfo{title}{Quasi-linear geostatistical theory for inversing}.
+\newblock \bibinfo{journal}{Water Resources Research} \bibinfo{volume}{31},
+  \bibinfo{pages}{2411--2419}.
+\newblock \DOIprefix\doi{10.1029/95WR01945}.
+%Type = Techreport
+\bibitem[{Langevin et~al.(2017)Langevin, Hughes, Banta, Niswonger, Panday and
+  Provost}]{langevin2017}
+\bibinfo{author}{Langevin, C.D.}, \bibinfo{author}{Hughes, J.D.},
+  \bibinfo{author}{Banta, E.R.}, \bibinfo{author}{Niswonger, R.G.},
+  \bibinfo{author}{Panday, S.}, \bibinfo{author}{Provost, A.M.},
+  \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{Documentation for the {MODFLOW 6} groundwater flow
+  model}.
+\newblock \bibinfo{type}{Techniques and Methods} \bibinfo{number}{6-A55}. U.S.
+  Geological Survey.
+\newblock \DOIprefix\doi{10.3133/tm6A55}.
+%Type = Article
+\bibitem[{Li and Tsai(2009)}]{li_tsai2009}
+\bibinfo{author}{Li, X.}, \bibinfo{author}{Tsai, F.T.C.}, \bibinfo{year}{2009}.
+\newblock \bibinfo{title}{{Bayesian} model averaging for groundwater head
+  prediction and uncertainty analysis using multimodel and multimethod}.
+\newblock \bibinfo{journal}{Water Resources Research} \bibinfo{volume}{45},
+  \bibinfo{pages}{W09403}.
+\newblock \DOIprefix\doi{10.1029/2008WR007488}.
+%Type = Article
+\bibitem[{Lin et~al.(2019)Lin, Huang and Yeh}]{lin_huang_yeh2019}
+\bibinfo{author}{Lin, Y.C.}, \bibinfo{author}{Huang, C.S.},
+  \bibinfo{author}{Yeh, H.D.}, \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{Analysis of unconfined flow induced by constant rate
+  pumping based on the lagging theory}.
+\newblock \bibinfo{journal}{Water Resources Research} \bibinfo{volume}{55},
+  \bibinfo{pages}{3925--3940}.
+\newblock \DOIprefix\doi{10.1029/2018WR023893}.
+%Type = Article
+\bibitem[{Lin and Yeh(2017)}]{lin_yeh2017}
+\bibinfo{author}{Lin, Y.C.}, \bibinfo{author}{Yeh, H.D.}, \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{A lagging model for describing drawdown induced by a
+  constant-rate pumping in a leaky confined aquifer}.
+\newblock \bibinfo{journal}{Water Resources Research} \bibinfo{volume}{53},
+  \bibinfo{pages}{8500--8511}.
+\newblock \DOIprefix\doi{10.1002/2017WR021115}.
+%Type = Misc
+\bibitem[{Lin(2026)}]{lin2026hydroshare}
+\bibinfo{author}{Lin, Y.F.}, \bibinfo{year}{2026}.
+\newblock \bibinfo{title}{Lagging {Darcy} diagnostic framework for pumping-test
+  transformation uncertainty [dataset and software]}.
+\newblock \URLprefix
+  \url{https://www.hydroshare.org/resource/3e8de7ff140c4ffab03163e215bb6634/}.
+  \bibinfo{note}{creative Commons Attribution 4.0 International (CC BY 4.0)}.
+%Type = Article
+\bibitem[{Liu et~al.(2007)Liu, Illman, Craig, Zhu and Yeh}]{liu_illman2007}
+\bibinfo{author}{Liu, X.}, \bibinfo{author}{Illman, W.A.},
+  \bibinfo{author}{Craig, A.J.}, \bibinfo{author}{Zhu, J.},
+  \bibinfo{author}{Yeh, T.C.J.}, \bibinfo{year}{2007}.
+\newblock \bibinfo{title}{Laboratory sandbox validation of transient hydraulic
+  tomography}.
+\newblock \bibinfo{journal}{Water Resources Research} \bibinfo{volume}{43},
+  \bibinfo{pages}{W05404}.
+\newblock \DOIprefix\doi{10.1029/2006WR005144}.
+%Type = Article
+\bibitem[{Manewell et~al.(2024)Manewell, Doherty and Hayes}]{manewell2024}
+\bibinfo{author}{Manewell, N.}, \bibinfo{author}{Doherty, J.},
+  \bibinfo{author}{Hayes, P.}, \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Translating pumping test data into groundwater model
+  parameters: A workflow to reveal aquifer heterogeneities and implications in
+  regional model parameterization}.
+\newblock \bibinfo{journal}{Frontiers in Water} \bibinfo{volume}{5},
+  \bibinfo{pages}{1334022}.
+\newblock \DOIprefix\doi{10.3389/frwa.2023.1334022}.
+%Type = Article
+\bibitem[{Manewell et~al.(2023)Manewell, Doherty and Hayes}]{manewell2022}
+\bibinfo{author}{Manewell, N.M.}, \bibinfo{author}{Doherty, J.},
+  \bibinfo{author}{Hayes, P.}, \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{Spatial averaging implied in aquifer test
+  interpretation: The meaning of estimated hydraulic properties}.
+\newblock \bibinfo{journal}{Frontiers in Earth Science} \bibinfo{volume}{10},
+  \bibinfo{pages}{1079287}.
+\newblock \DOIprefix\doi{10.3389/feart.2022.1079287}.
+%Type = Article
+\bibitem[{Naderi and Gupta(2023)}]{naderi_gupta2023}
+\bibinfo{author}{Naderi, M.}, \bibinfo{author}{Gupta, H.V.},
+  \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{On the requirements for inferring aquifer-scale {T}
+  and {S} in heterogeneous confined aquifers}.
+\newblock \bibinfo{journal}{Water Resources Research} \bibinfo{volume}{59},
+  \bibinfo{pages}{e2023WR034430}.
+\newblock \DOIprefix\doi{10.1029/2023WR034430}.
+%Type = Techreport
+\bibitem[{Nadler(2020a)}]{nadler2020report}
+\bibinfo{author}{Nadler, C.}, \bibinfo{year}{2020}a.
+\newblock \bibinfo{title}{Analysis of aquifer framework and hydraulic
+  properties of {Lovelock Valley}, {Lovelock}, {Nevada}}.
+\newblock \bibinfo{type}{Open-File Report} \bibinfo{number}{2019-1133}. U.S.
+  Geological Survey.
+\newblock \DOIprefix\doi{10.3133/ofr20191133}.
+%Type = Misc
+\bibitem[{Nadler(2020b)}]{nadler2020data}
+\bibinfo{author}{Nadler, C.A.}, \bibinfo{year}{2020}b.
+\newblock \bibinfo{title}{Supplemental data for analysis of aquifer framework
+  and hydraulic properties of {Lovelock Valley}, {Lovelock}, {NV}}.
+\newblock \DOIprefix\doi{10.5066/P9LIL7PZ}.
+%Type = Article
+\bibitem[{Neuman(1975)}]{neuman1975}
+\bibinfo{author}{Neuman, S.P.}, \bibinfo{year}{1975}.
+\newblock \bibinfo{title}{Analysis of pumping test data from anisotropic
+  unconfined aquifers considering delayed gravity response}.
+\newblock \bibinfo{journal}{Water Resources Research} \bibinfo{volume}{11},
+  \bibinfo{pages}{329--342}.
+\newblock \DOIprefix\doi{10.1029/WR011i002p00329}.
+%Type = Article
+\bibitem[{Papadopulos and Cooper(1967)}]{papadopulos_cooper1967}
+\bibinfo{author}{Papadopulos, I.S.}, \bibinfo{author}{Cooper, H.H.},
+  \bibinfo{year}{1967}.
+\newblock \bibinfo{title}{Drawdown in a well of large diameter}.
+\newblock \bibinfo{journal}{Water Resources Research} \bibinfo{volume}{3},
+  \bibinfo{pages}{241--244}.
+\newblock \DOIprefix\doi{10.1029/WR003i001p00241}.
+%Type = Article
+\bibitem[{Phoon and Kulhawy(1999a)}]{phoon_kulhawy1999a}
+\bibinfo{author}{Phoon, K.K.}, \bibinfo{author}{Kulhawy, F.H.},
+  \bibinfo{year}{1999}a.
+\newblock \bibinfo{title}{Characterization of geotechnical variability}.
+\newblock \bibinfo{journal}{Canadian Geotechnical Journal}
+  \bibinfo{volume}{36}, \bibinfo{pages}{612--624}.
+\newblock \DOIprefix\doi{10.1139/t99-038}.
+%Type = Article
+\bibitem[{Phoon and Kulhawy(1999b)}]{phoon_kulhawy1999b}
+\bibinfo{author}{Phoon, K.K.}, \bibinfo{author}{Kulhawy, F.H.},
+  \bibinfo{year}{1999}b.
+\newblock \bibinfo{title}{Evaluation of geotechnical property variability}.
+\newblock \bibinfo{journal}{Canadian Geotechnical Journal}
+  \bibinfo{volume}{36}, \bibinfo{pages}{625--639}.
+\newblock \DOIprefix\doi{10.1139/t99-039}.
+%Type = Article
+\bibitem[{Poeter and Anderson(2005)}]{poeter_anderson2005}
+\bibinfo{author}{Poeter, E.}, \bibinfo{author}{Anderson, D.},
+  \bibinfo{year}{2005}.
+\newblock \bibinfo{title}{Multimodel ranking and inference in ground water
+  modeling}.
+\newblock \bibinfo{journal}{Groundwater} \bibinfo{volume}{43},
+  \bibinfo{pages}{597--605}.
+\newblock \DOIprefix\doi{10.1111/j.1745-6584.2005.0061.x}.
+%Type = Book
+\bibitem[{Powers et~al.(2007)Powers, Corwin, Schmall and Kaeck}]{powers2007}
+\bibinfo{author}{Powers, J.P.}, \bibinfo{author}{Corwin, A.B.},
+  \bibinfo{author}{Schmall, P.C.}, \bibinfo{author}{Kaeck, W.E.},
+  \bibinfo{year}{2007}.
+\newblock \bibinfo{title}{Construction Dewatering and Groundwater Control: New
+  Methods and Applications}.
+\newblock \bibinfo{edition}{3} ed., \bibinfo{publisher}{John Wiley \& Sons}.
+%Type = Article
+\bibitem[{Refsgaard et~al.(2006)Refsgaard, van~der Sluijs, Brown and van~der
+  Keur}]{refsgaard2006}
+\bibinfo{author}{Refsgaard, J.C.}, \bibinfo{author}{van~der Sluijs, J.P.},
+  \bibinfo{author}{Brown, J.}, \bibinfo{author}{van~der Keur, P.},
+  \bibinfo{year}{2006}.
+\newblock \bibinfo{title}{A framework for dealing with uncertainty due to model
+  structure error}.
+\newblock \bibinfo{journal}{Advances in Water Resources} \bibinfo{volume}{29},
+  \bibinfo{pages}{1586--1597}.
+\newblock \DOIprefix\doi{10.1016/j.advwatres.2005.11.013}.
+%Type = Article
+\bibitem[{Rojas et~al.(2008)Rojas, Feyen and Dassargues}]{rojas2008}
+\bibinfo{author}{Rojas, R.}, \bibinfo{author}{Feyen, L.},
+  \bibinfo{author}{Dassargues, A.}, \bibinfo{year}{2008}.
+\newblock \bibinfo{title}{Conceptual model uncertainty in groundwater modeling:
+  Combining generalized likelihood uncertainty estimation and {Bayesian} model
+  averaging}.
+\newblock \bibinfo{journal}{Water Resources Research} \bibinfo{volume}{44},
+  \bibinfo{pages}{W12418}.
+\newblock \DOIprefix\doi{10.1029/2008WR006908}.
+%Type = Book
+\bibitem[{Rubin(2003)}]{rubin2003}
+\bibinfo{author}{Rubin, Y.}, \bibinfo{year}{2003}.
+\newblock \bibinfo{title}{Applied Stochastic Hydrogeology}.
+\newblock \bibinfo{publisher}{Oxford University Press}, \bibinfo{address}{New
+  York}.
+%Type = Article
+\bibitem[{Sanchez-Vila et~al.(1999)Sanchez-Vila, Meier and
+  Carrera}]{sanchez_vila1999}
+\bibinfo{author}{Sanchez-Vila, X.}, \bibinfo{author}{Meier, P.M.},
+  \bibinfo{author}{Carrera, J.}, \bibinfo{year}{1999}.
+\newblock \bibinfo{title}{Pumping tests in heterogeneous aquifers: An
+  analytical study of what can be obtained from their interpretation using
+  {Jacob}'s method}.
+\newblock \bibinfo{journal}{Water Resources Research} \bibinfo{volume}{35},
+  \bibinfo{pages}{943--952}.
+\newblock \DOIprefix\doi{10.1029/1999WR900007}.
+%Type = Article
+\bibitem[{Schwarz(1978)}]{schwarz1978}
+\bibinfo{author}{Schwarz, G.}, \bibinfo{year}{1978}.
+\newblock \bibinfo{title}{Estimating the dimension of a model}.
+\newblock \bibinfo{journal}{The Annals of Statistics} \bibinfo{volume}{6},
+  \bibinfo{pages}{461--464}.
+\newblock \DOIprefix\doi{10.1214/aos/1176344136}.
+%Type = Article
+\bibitem[{Stehfest(1970)}]{stehfest1970}
+\bibinfo{author}{Stehfest, H.}, \bibinfo{year}{1970}.
+\newblock \bibinfo{title}{Algorithm 368: Numerical inversion of laplace
+  transforms}.
+\newblock \bibinfo{journal}{Communications of the ACM} \bibinfo{volume}{13},
+  \bibinfo{pages}{47--49}.
+\newblock \DOIprefix\doi{10.1145/361953.361969}.
+%Type = Article
+\bibitem[{Theis(1935)}]{theis1935}
+\bibinfo{author}{Theis, C.V.}, \bibinfo{year}{1935}.
+\newblock \bibinfo{title}{The relation between the lowering of the piezometric
+  surface and the rate and duration of discharge of a well using ground-water
+  storage}.
+\newblock \bibinfo{journal}{Transactions, American Geophysical Union}
+  \bibinfo{volume}{16}, \bibinfo{pages}{519--524}.
+\newblock \DOIprefix\doi{10.1029/TR016i002p00519}.
+%Type = Article
+\bibitem[{Tsai(2010)}]{tsai2010}
+\bibinfo{author}{Tsai, F.T.C.}, \bibinfo{year}{2010}.
+\newblock \bibinfo{title}{{Bayesian} model averaging assessment on groundwater
+  management under model structure uncertainty}.
+\newblock \bibinfo{journal}{Stochastic Environmental Research and Risk
+  Assessment} \bibinfo{volume}{24}, \bibinfo{pages}{845--861}.
+\newblock \DOIprefix\doi{10.1007/s00477-010-0382-3}.
+%Type = Article
+\bibitem[{Tsai and Elshall(2013)}]{tsai_elshall2013}
+\bibinfo{author}{Tsai, F.T.C.}, \bibinfo{author}{Elshall, A.S.},
+  \bibinfo{year}{2013}.
+\newblock \bibinfo{title}{Hierarchical {Bayesian} model averaging for
+  hydrostratigraphic modeling: Uncertainty segregation and comparative
+  evaluation}.
+\newblock \bibinfo{journal}{Water Resources Research} \bibinfo{volume}{49},
+  \bibinfo{pages}{5520--5536}.
+\newblock \DOIprefix\doi{10.1002/wrcr.20428}.
+%Type = Article
+\bibitem[{Vehtari et~al.(2017)Vehtari, Gelman and Gabry}]{vehtari2017}
+\bibinfo{author}{Vehtari, A.}, \bibinfo{author}{Gelman, A.},
+  \bibinfo{author}{Gabry, J.}, \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{Practical {Bayesian} model evaluation using
+  leave-one-out cross-validation and {WAIC}}.
+\newblock \bibinfo{journal}{Statistics and Computing} \bibinfo{volume}{27},
+  \bibinfo{pages}{1413--1432}.
+\newblock \DOIprefix\doi{10.1007/s11222-016-9696-4}.
+%Type = Article
+\bibitem[{Warren and Root(1963)}]{warren_root1963}
+\bibinfo{author}{Warren, J.E.}, \bibinfo{author}{Root, P.J.},
+  \bibinfo{year}{1963}.
+\newblock \bibinfo{title}{The behavior of naturally fractured reservoirs}.
+\newblock \bibinfo{journal}{Society of Petroleum Engineers Journal}
+  \bibinfo{volume}{3}, \bibinfo{pages}{245--255}.
+\newblock \DOIprefix\doi{10.2118/426-PA}.
+%Type = Article
+\bibitem[{Xu and Valocchi(2015)}]{xu_valocchi2015}
+\bibinfo{author}{Xu, T.}, \bibinfo{author}{Valocchi, A.J.},
+  \bibinfo{year}{2015}.
+\newblock \bibinfo{title}{A {Bayesian} approach to improved calibration and
+  prediction of groundwater models with structural error}.
+\newblock \bibinfo{journal}{Water Resources Research} \bibinfo{volume}{51},
+  \bibinfo{pages}{9290--9311}.
+\newblock \DOIprefix\doi{10.1002/2015WR017912}.
+%Type = Article
+\bibitem[{Ye et~al.(2010)Ye, Pohlmann, Chapman, Pohll and Reeves}]{ye2010}
+\bibinfo{author}{Ye, M.}, \bibinfo{author}{Pohlmann, K.F.},
+  \bibinfo{author}{Chapman, J.B.}, \bibinfo{author}{Pohll, G.M.},
+  \bibinfo{author}{Reeves, D.M.}, \bibinfo{year}{2010}.
+\newblock \bibinfo{title}{A model-averaging method for assessing groundwater
+  conceptual model uncertainty}.
+\newblock \bibinfo{journal}{Groundwater} \bibinfo{volume}{48},
+  \bibinfo{pages}{716--728}.
+\newblock \DOIprefix\doi{10.1111/j.1745-6584.2009.00633.x}.
+%Type = Article
+\bibitem[{Yeh and Liu(2000)}]{yeh_liu2000}
+\bibinfo{author}{Yeh, T.C.J.}, \bibinfo{author}{Liu, S.}, \bibinfo{year}{2000}.
+\newblock \bibinfo{title}{Hydraulic tomography: Development of a new aquifer
+  test method}.
+\newblock \bibinfo{journal}{Water Resources Research} \bibinfo{volume}{36},
+  \bibinfo{pages}{2095--2105}.
+\newblock \DOIprefix\doi{10.1029/2000WR900114}.
+%Type = Article
+\bibitem[{Yeh(1986)}]{yeh1986}
+\bibinfo{author}{Yeh, W.W.G.}, \bibinfo{year}{1986}.
+\newblock \bibinfo{title}{Review of parameter identification procedures in
+  groundwater hydrology: The inverse problem}.
+\newblock \bibinfo{journal}{Water Resources Research} \bibinfo{volume}{22},
+  \bibinfo{pages}{95--108}.
+\newblock \DOIprefix\doi{10.1029/WR022i002p00095}.
+
+\end{thebibliography}

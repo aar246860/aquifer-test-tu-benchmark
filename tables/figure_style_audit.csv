@@ -1,0 +1,12 @@
+figure,cmc_palette,role,pdf,svg,png
+fig01_pathway_framework,cmcrameri.cm.batlow sampled; cmcrameri.cm.grayC,four-pathway transformation framework,True,True,True
+fig02_site_layout,cmcrameri.cm.batlow,paired normalized field-case spatial support,True,True,True
+fig03_observed_simulated_drawdown,cmcrameri.cm.batlow sampled,Massachusetts four-pathway hydrograph contrast,True,True,True
+fig04_transformation_scatter,cmcrameri.cm.batlow,Massachusetts distance-colored transformation scatter,True,True,True
+fig05_transformation_residual_distributions,cmcrameri.cm.batlow sampled,Massachusetts four-pathway residual contrast,True,True,True
+fig06_massachusetts_pathway_summary,cmcrameri.cm.batlow sampled,"Massachusetts response, BIC, and parameter summary",True,True,True
+fig07_lovelock_response_hydrographs,cmcrameri.cm.batlow sampled; cmcrameri.cm.grayC,Lovelock response-level hydrograph contrast,True,True,True
+fig08_lovelock_transformation_scatter,cmcrameri.cm.batlow,Lovelock distance-colored transformation scatter,True,True,True
+fig09_lovelock_residual_distribution,cmcrameri.cm.batlow sampled; cmcrameri.cm.grayC,Lovelock four-pathway residual contrast,True,True,True
+fig10_lovelock_pathway_summary,cmcrameri.cm.batlow sampled; cmcrameri.cm.grayC,"Lovelock response, BIC, and parameter summary",True,True,True
+fig11_two_case_synthesis,cmcrameri.cm.batlow sampled; cmcrameri.cm.grayC,two-case validation and claim-boundary synthesis,True,True,True

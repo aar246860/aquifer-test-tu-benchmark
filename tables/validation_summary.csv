@@ -1,0 +1,3 @@
+case,validation_type,n_blocks,lagging_preferred_blocks,darcy_preferred_blocks,mean_rmse_darcy_m,mean_rmse_lagging_m,interpretation
+Primary fractured-bedrock case,leave-one-observation-well-out log-distance transfer,12,5,7,0.31762310505051633,0.3210344999086268,"Spatial-transfer validation is mixed, so response improvement is not treated as universal predictive superiority."
+Lovelock Valley field-scale case,external field-scale case with model-complexity evidence,7,6,1,,,"External-case BIC evidence favors lagging Darcy for most Lovelock wells, but parameter outcomes remain mixed."

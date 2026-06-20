@@ -1,0 +1,6 @@
+pathway,pathway_short,storage_log_variance,transmissivity_log_variance,storage_variance_ratio_to_theis,transmissivity_variance_ratio_to_theis
+Theis confined,Theis,0.5803824657599481,2.5294006887047398,1.0,1.0
+Hantush-Jacob leaky,Hantush leaky,0.5534755347997503,2.6847808158260915,0.9536393110619459,1.0614296215760577
+Lagging Darcy no-leakage,"Lagging
+without leakage",0.6481118450654139,1.472553455136575,1.116697838582669,0.5821748454930021
+Lagging Darcy with leakage,Lagging leaky,4.656843488175625,3.1694434891742915,8.023749446113937,1.2530412849683006

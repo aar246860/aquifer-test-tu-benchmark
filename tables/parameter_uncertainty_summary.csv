@@ -1,0 +1,9 @@
+case,quantity,model,median,log_sd,cov_lognormal,p05,p95,interpretation,variance_ratio_lagging_over_darcy
+Primary fractured-bedrock case,S,Darcy,0.00177122005547855,1.2432021527720016,1.9210825570616943,0.00018570819886315,0.005807621465046646,"Parameter-level variability is reported as apparent variability, not true heterogeneity.",
+Primary fractured-bedrock case,S,Lagging Darcy,0.00196080031678825,1.1792454344418077,1.737048993807449,0.00021899135738041,0.006040272639242115,"Parameter-level variability is reported as apparent variability, not true heterogeneity.",
+Primary fractured-bedrock case,T,Darcy,6.18480454179713e-05,0.5601317606859241,0.607078460969999,2.0290873646888178e-05,8.12719216960453e-05,"Parameter-level variability is reported as apparent variability, not true heterogeneity.",
+Primary fractured-bedrock case,T,Lagging Darcy,3.4625541598583074e-05,0.4368817554786037,0.4585813558028464,1.5242441728431733e-05,4.685489553627499e-05,"Parameter-level variability is reported as apparent variability, not true heterogeneity.",
+Primary fractured-bedrock case,tau_q,Lagging Darcy,0.14742267301039347,0.4817161848374259,0.5110610484155145,0.0714119529086882,0.2584052619509747,"Parameter-level variability is reported as apparent variability, not true heterogeneity.",
+Primary fractured-bedrock case,tau_s,Lagging Darcy,0.3148828342207137,0.10384485331077242,0.10412544261689644,0.2868263473790352,0.38277918846453834,"Parameter-level variability is reported as apparent variability, not true heterogeneity.",
+Lovelock Valley field-scale case,storage,Lagging/Darcy variance ratio,,,,,,External-case parameter variability remains model dependent.,1.1157411250134266
+Lovelock Valley field-scale case,transmissivity,Lagging/Darcy variance ratio,,,,,,External-case parameter variability remains model dependent.,0.5819196135296578

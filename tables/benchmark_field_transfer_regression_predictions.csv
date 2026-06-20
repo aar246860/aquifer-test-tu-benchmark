@@ -1,0 +1,7 @@
+field_case,quantity,target,predicted_p90_abs_log_model_factor,p90_equivalent_lognormal_cov
+Massachusetts,T,p90_abs_lnM_T,0.9229514599394402,0.6082569702771271
+Massachusetts,S,p90_abs_lnM_S,0.9812034729336735,0.6536812241060654
+Massachusetts,response time,p90_abs_lnM_response_time,1.2651237357983172,0.8981346635285306
+Lovelock Valley,T,p90_abs_lnM_T,0.7901600056135281,0.5094263967744104
+Lovelock Valley,S,p90_abs_lnM_S,0.4922709804798499,0.30607926028843013
+Lovelock Valley,response time,p90_abs_lnM_response_time,0.5802527681313872,0.36399924971432196

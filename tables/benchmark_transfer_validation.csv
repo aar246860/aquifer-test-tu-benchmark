@@ -1,0 +1,5 @@
+metric,value
+top1_accuracy,0.3286
+top3_accuracy,0.8805
+multiclass_log_loss,1.335136199881997
+scenario_count,10000.0

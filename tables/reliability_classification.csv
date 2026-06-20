@@ -1,0 +1,9 @@
+pathway,implementation_status,class_A_count,class_B_count,class_C_count,class_D_count,worst_class,interpretation
+Cooper-Jacob late-time,implemented,0,0,62,12,D,"Synthetic benchmark reliability based on Delta_logT, Delta_logS, SD_epsilon, and boundary hits."
+Hantush-Jacob leaky,implemented,1,1,48,24,D,"Synthetic benchmark reliability based on Delta_logT, Delta_logS, SD_epsilon, and boundary hits."
+Lagging Darcy no-leakage,implemented,1,15,58,0,C,"Synthetic benchmark reliability based on Delta_logT, Delta_logS, SD_epsilon, and boundary hits. Tau parameters remain diagnostic unless independently constrained by additional evidence."
+Lagging Darcy with leakage,implemented,0,7,37,30,D,"Synthetic benchmark reliability based on Delta_logT, Delta_logS, SD_epsilon, and boundary hits."
+Theis fixed-rate,implemented,1,3,46,24,D,"Synthetic benchmark reliability based on Delta_logT, Delta_logS, SD_epsilon, and boundary hits."
+Theis schedule-aware,implemented,1,17,32,24,D,"Synthetic benchmark reliability based on Delta_logT, Delta_logS, SD_epsilon, and boundary hits."
+Field lagging Darcy response diagnostic,field diagnostic,0,1,1,0,C,"Response scatter improves strongly, but spatial transfer and lag-parameter identifiability remain mixed."
+Field lagging time parameters,field diagnostic,0,0,1,0,C,Local MAP tradeoff and weak priors require interpreting tau parameters as diagnostic response features.

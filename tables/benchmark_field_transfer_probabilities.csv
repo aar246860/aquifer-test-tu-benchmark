@@ -1,0 +1,11 @@
+field_case,rank,benchmark_group,transfer_probability
+Massachusetts,1,combined,0.35033097723833995
+Massachusetts,2,leakage,0.29055874409728244
+Massachusetts,3,heterogeneity,0.17211308232858627
+Massachusetts,4,boundary,0.14013380711065865
+Massachusetts,5,baseline,0.046863389225132654
+Lovelock Valley,1,boundary,0.23345990655374343
+Lovelock Valley,2,leakage,0.2199862011088088
+Lovelock Valley,3,heterogeneity,0.1979147674061924
+Lovelock Valley,4,baseline,0.18111359252274442
+Lovelock Valley,5,combined,0.16752553240851117

@@ -1,0 +1,9 @@
+case,pathway,mean_bic_weight
+Lovelock Valley,Hantush-Jacob leaky,0.03038309359842242
+Lovelock Valley,Lagging Darcy no-leakage,0.6460760682329333
+Lovelock Valley,Lagging Darcy with leakage,0.09054573535457232
+Lovelock Valley,Theis confined,0.23299510281407196
+Massachusetts,Hantush-Jacob leaky,0.18222720686937025
+Massachusetts,Lagging Darcy no-leakage,0.2882167835874431
+Massachusetts,Lagging Darcy with leakage,0.38587039306197285
+Massachusetts,Theis confined,0.1436856164812138

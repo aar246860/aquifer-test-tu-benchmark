@@ -1,0 +1,77 @@
+case,well,pathway,bic_weight
+Massachusetts,MW-01,Theis confined,0.8552257706257106
+Massachusetts,MW-01,Hantush-Jacob leaky,0.14455954082522846
+Massachusetts,MW-01,Lagging Darcy no-leakage,0.0001893038624841896
+Massachusetts,MW-01,Lagging Darcy with leakage,2.538468657681934e-05
+Massachusetts,MW-02,Theis confined,3.740665916615705e-17
+Massachusetts,MW-02,Hantush-Jacob leaky,6.61539978799861e-18
+Massachusetts,MW-02,Lagging Darcy no-leakage,0.31898021594071563
+Massachusetts,MW-02,Lagging Darcy with leakage,0.6810197840592844
+Massachusetts,MW-03,Theis confined,1.052355904033308e-12
+Massachusetts,MW-03,Hantush-Jacob leaky,1.8885236133895457e-13
+Massachusetts,MW-03,Lagging Darcy no-leakage,0.39672080114224106
+Massachusetts,MW-03,Lagging Darcy with leakage,0.6032791988565177
+Massachusetts,MW-04,Theis confined,1.3138123116340282e-11
+Massachusetts,MW-04,Hantush-Jacob leaky,2.430625684306455e-12
+Massachusetts,MW-04,Lagging Darcy no-leakage,0.8604618328252909
+Massachusetts,MW-04,Lagging Darcy with leakage,0.13953816715914033
+Massachusetts,MW-05,Theis confined,2.930067904644634e-22
+Massachusetts,MW-05,Hantush-Jacob leaky,5.538184871950257e-23
+Massachusetts,MW-05,Lagging Darcy no-leakage,0.9150140675103846
+Massachusetts,MW-05,Lagging Darcy with leakage,0.08498593248961539
+Massachusetts,MW-06,Theis confined,1.4250462929779963e-12
+Massachusetts,MW-06,Hantush-Jacob leaky,2.7424961166428015e-13
+Massachusetts,MW-06,Lagging Darcy no-leakage,0.966921930637169
+Massachusetts,MW-06,Lagging Darcy with leakage,0.03307806936113153
+Massachusetts,MW-07,Theis confined,8.710926452398523e-06
+Massachusetts,MW-07,Hantush-Jacob leaky,0.9656239911853362
+Massachusetts,MW-07,Lagging Darcy no-leakage,2.0966895727228665e-09
+Massachusetts,MW-07,Lagging Darcy with leakage,0.03436729579152176
+Massachusetts,MW-08,Theis confined,2.669889105563309e-23
+Massachusetts,MW-08,Hantush-Jacob leaky,0.945537321727814
+Massachusetts,MW-08,Lagging Darcy no-leakage,4.577233106850413e-31
+Massachusetts,MW-08,Lagging Darcy with leakage,0.05446267827218603
+Massachusetts,MW-10,Theis confined,7.278987278775328e-46
+Massachusetts,MW-10,Hantush-Jacob leaky,1.0621347208934839e-46
+Massachusetts,MW-10,Lagging Darcy no-leakage,7.964960667985541e-15
+Massachusetts,MW-10,Lagging Darcy with leakage,0.999999999999992
+Massachusetts,MW-11,Theis confined,9.260674400035445e-25
+Massachusetts,MW-11,Hantush-Jacob leaky,4.2650239685142604e-10
+Massachusetts,MW-11,Lagging Darcy no-leakage,1.0731273253410427e-26
+Massachusetts,MW-11,Lagging Darcy with leakage,0.9999999995734976
+Massachusetts,MW-12,Theis confined,0.8689929162067871
+Massachusetts,MW-12,Hantush-Jacob leaky,0.1310056282646682
+Massachusetts,MW-12,Lagging Darcy no-leakage,2.938185165528925e-09
+Massachusetts,MW-12,Lagging Darcy with leakage,1.4525903595531334e-06
+Massachusetts,MW-13,Theis confined,8.426824419814519e-24
+Massachusetts,MW-13,Hantush-Jacob leaky,1.5395601483712593e-24
+Massachusetts,MW-13,Lagging Darcy no-leakage,0.00031324609614942934
+Massachusetts,MW-13,Lagging Darcy with leakage,0.9996867539038505
+Lovelock Valley,WWBN,Theis confined,1.3893005529916222e-101
+Lovelock Valley,WWBN,Hantush-Jacob leaky,8.16298869808891e-178
+Lovelock Valley,WWBN,Lagging Darcy no-leakage,0.937359580220723
+Lovelock Valley,WWBN,Lagging Darcy with leakage,0.06264041977927706
+Lovelock Valley,LEID,Theis confined,5.383349757226509e-54
+Lovelock Valley,LEID,Hantush-Jacob leaky,2.4648047165967112e-55
+Lovelock Valley,LEID,Lagging Darcy no-leakage,0.8760938800485676
+Lovelock Valley,LEID,Lagging Darcy with leakage,0.12390611995143237
+Lovelock Valley,MD,Theis confined,1.5889539829510472e-05
+Lovelock Valley,MD,Hantush-Jacob leaky,1.8025443779876189e-06
+Lovelock Valley,MD,Lagging Darcy no-leakage,0.8925533345589881
+Lovelock Valley,MD,Lagging Darcy with leakage,0.10742897335680429
+Lovelock Valley,MOIR,Theis confined,3.08369160001792e-07
+Lovelock Valley,MOIR,Hantush-Jacob leaky,4.337682712868944e-08
+Lovelock Valley,MOIR,Lagging Darcy no-leakage,0.8192593687972177
+Lovelock Valley,MOIR,Lagging Darcy with leakage,0.18074027945679508
+Lovelock Valley,FETH,Theis confined,0.7839871718293088
+Lovelock Valley,FETH,Hantush-Jacob leaky,0.11101741951242677
+Lovelock Valley,FETH,Lagging Darcy no-leakage,0.09190771088962443
+Lovelock Valley,FETH,Lagging Darcy with leakage,0.013087697768639883
+Lovelock Valley,WD,Theis confined,0.25911194396508164
+Lovelock Valley,WD,Hantush-Jacob leaky,0.031097370776893084
+Lovelock Valley,WD,Lagging Darcy no-leakage,0.6014572294773994
+Lovelock Valley,WD,Lagging Darcy with leakage,0.10833345578062585
+Lovelock Valley,WS,Theis confined,0.5878504059951236
+Lovelock Valley,WS,Hantush-Jacob leaky,0.07056501897843197
+Lovelock Valley,WS,Lagging Darcy no-leakage,0.30390137363801273
+Lovelock Valley,WS,Lagging Darcy with leakage,0.03768320138843172

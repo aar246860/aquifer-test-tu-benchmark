@@ -1,0 +1,15 @@
+﻿*.aux
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.spl
+*.synctex.gz
+*.toc
+__pycache__/
+.pytest_cache/
+outputs/
+*_work/
+tables/*benchmark_fits.csv
+tables/mf6_mega_benchmark_fits.csv

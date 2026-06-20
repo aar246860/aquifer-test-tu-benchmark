@@ -1,0 +1,12 @@
+pathway,implementation_status,role
+Theis fixed-rate,implemented,Confined homogeneous analytical baseline fit with constant pumping rate.
+Theis schedule-aware,implemented,Theis superposition pathway using the prescribed step or recovery schedule.
+Hantush-Jacob leaky,implemented,"Conventional leaky confined aquifer pathway with T, S, and leakage factor B."
+Cooper-Jacob late-time,implemented,"Late-time straight-line approximation, used as a conventional screening pathway."
+Lagging Darcy no-leakage,implemented,"Lagging Darcy no-leakage limit with T, S, tau_q, and tau_s estimated from the response."
+Lagging Darcy with leakage,implemented,"General Lin-Yeh lagging leaky pathway with T, S, tau_q, tau_s, and leakage factor B."
+Delayed-yield or unconfined drainage,conceptual,Conventional pathway to implement before design-grade claims.
+Wellbore storage/skin,conceptual,Required to stress-test early-time response interpretation.
+Generalized radial flow,conceptual,Required to test non-integer or fractured flow dimension ambiguity.
+Dual-porosity/fracture-matrix,conceptual,Required to test exchange-driven temporal memory against lagging diagnostics.
+Numerical inverse model,conceptual,Required for heterogeneous known-truth fields and support-scale targets.

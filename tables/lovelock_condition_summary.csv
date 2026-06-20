@@ -1,0 +1,3 @@
+test,pump_well,reported_rate_gpm,reported_observation_wells,raw_water_level_sheets,has_raw_pumping_sheet,processed_wlm_workbooks,coordinate_rows,min_raw_points_during_test,min_processed_points_during_test,analysis_readiness,primary_blocker,pumping_details_json
+MWP1,Well 4,4400.0,7,6,False,6,7,378,191,usable_with_more_reconstruction,raw workbook lacks a simple pumping sheet and has stronger river-stage reconstruction needs,{}
+MWP2,Well 10,6040.0,15,14,True,14,15,97,57,best_candidate,requires environmental-corrected drawdown and variable-rate response support,"{""records"": 7, ""q_min_gpm"": 0.0, ""q_max_gpm"": 6036.458333333333, ""q_mean_gpm"": 3449.404761904761, ""date_start"": ""2017-09-22T12:00:00"", ""date_end"": ""2017-12-04T11:28:00""}"

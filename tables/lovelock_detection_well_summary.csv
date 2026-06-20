@@ -1,0 +1,13 @@
+Trimmed_WELL,short,well_number,distance_mi,certainty,n,min_drawdown_ft,max_drawdown_ft,median_weight,selected_for_analysis
+bFETH__,FETH,1,5.7,moderate,49,0.0004390926,0.1215216,5.0,True
+bAIRP__,AIRP,3,6.0,low,69,0.0,0.0468426459999999,7.0,False
+bMOIR__,MOIR,4,5.0,moderate,49,0.0,0.167557162,3.0,True
+bMD____,MD,7,4.8,low,69,-0.0293802599999999,0.1363459,1.0,True
+bNDOA__,NDOA,8,2.6,low,69,-0.0236551759999999,0.038334084,1.0,False
+bLEID__,LEID,9,1.0,high,49,0.3473821,2.591293,0.3,True
+bWWBN__,WWBN,11,0.6,high,166,0.04410033,9.030466,0.7,True
+bBD____,BD,13,0.6,moderate,69,-0.005259935,0.0483253639999999,1.0,False
+bPINN__,PINN,14,5.1,low,69,0.0,0.038253726,3.0,False
+bWS____,WS,15,9.6,low,69,-0.0155312,0.0579673,1.0,True
+bWD____,WD,16,9.6,low,69,-0.0150047,0.07287966,1.0,True
+bTWEL__,TWEL,17,12.3,low,69,-0.03292182,0.0226492,1.0,False

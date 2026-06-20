@@ -1,0 +1,4 @@
+﻿Reproducible groundwater-flow benchmarks quantify aquifer-test transformation uncertainty.
+Benchmark-transfer regressions map response diagnostics to field model-factor scale.
+Two field cases test how inferred aquifer parameters inherit interpretation uncertainty.
+Decision diagnostics show effects on hydraulic capacity and groundwater response time.

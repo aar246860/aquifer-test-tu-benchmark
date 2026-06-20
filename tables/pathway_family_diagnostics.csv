@@ -1,0 +1,49 @@
+family,truth_model,pathway,scenario_count,median_abs_delta_logT,median_abs_delta_logS,median_sd_epsilon,class_A_count,class_B_count,class_C_count,class_D_count,boundary_hit_count,worst_class
+lagging_darcy_truth,Lagging Darcy truth,Theis schedule-aware,12,1.1453950658159693,0.919194418078341,0.4197186077103846,0,0,0,12,0,D
+lagging_darcy_truth,Lagging Darcy truth,Theis fixed-rate,12,1.1453950658159693,0.919194418078341,0.4197186077103846,0,0,0,12,0,D
+lagging_darcy_truth,Lagging Darcy truth,Hantush-Jacob leaky,12,1.096831022113811,0.926054347641447,0.43823009048811723,0,0,0,12,12,D
+lagging_darcy_truth,Lagging Darcy truth,Cooper-Jacob late-time,12,0.2761242245552187,0.41216623337749486,0.9612447953750745,0,0,12,0,0,C
+lagging_darcy_truth,Lagging Darcy truth,Lagging Darcy no-leakage,12,0.07028545754366711,0.058376609655078834,0.2854704057730779,0,9,3,0,0,C
+lagging_darcy_truth,Lagging Darcy truth,Lagging Darcy with leakage,12,0.3742368354414271,0.06389716163706047,0.2748589398477864,0,3,5,4,2,D
+lagging_leaky_truth,Lagging Darcy leaky truth,Theis schedule-aware,12,1.3611848221117204,0.8323218556013916,0.3644610626601509,0,0,0,12,0,D
+lagging_leaky_truth,Lagging Darcy leaky truth,Theis fixed-rate,12,1.3611848221117204,0.8323218556013916,0.3644610626601509,0,0,0,12,0,D
+lagging_leaky_truth,Lagging Darcy leaky truth,Hantush-Jacob leaky,12,1.306882751644988,0.8391288977732414,0.37999689793211516,0,0,0,12,12,D
+lagging_leaky_truth,Lagging Darcy leaky truth,Cooper-Jacob late-time,12,0.7856008799756231,0.3986074600012639,0.7262994958911018,0,0,12,0,0,C
+lagging_leaky_truth,Lagging Darcy leaky truth,Lagging Darcy no-leakage,12,0.5285125741742157,0.0681379645159379,0.2946206091928809,0,0,12,0,0,C
+lagging_leaky_truth,Lagging Darcy leaky truth,Lagging Darcy with leakage,12,0.5830213691185095,0.07482539494876828,0.2756975127439082,0,2,5,5,0,D
+leaky_clean,Hantush-Jacob clean leaky truth,Theis schedule-aware,1,0.27231674910446996,0.18086894684506774,0.0681599514495196,0,0,1,0,0,C
+leaky_clean,Hantush-Jacob clean leaky truth,Theis fixed-rate,1,0.27231674910446996,0.18086894684506774,0.0681599514495196,0,0,1,0,0,C
+leaky_clean,Hantush-Jacob clean leaky truth,Hantush-Jacob leaky,1,8.881784197001248e-16,2.2204460492503128e-16,6.2212391032871235e-16,1,0,0,0,0,A
+leaky_clean,Hantush-Jacob clean leaky truth,Cooper-Jacob late-time,1,0.7071354183266563,0.2564908136508588,0.60165610856707,0,0,1,0,0,C
+leaky_clean,Hantush-Jacob clean leaky truth,Lagging Darcy no-leakage,1,0.2650983711668367,0.19379688243326001,0.07248056794626288,0,0,1,0,0,C
+leaky_clean,Hantush-Jacob clean leaky truth,Lagging Darcy with leakage,1,0.12693690464345683,0.023341803732958633,0.013700316710671475,0,1,0,0,0,B
+leaky_truth,Hantush-Jacob leaky truth,Theis schedule-aware,12,0.4291105112488668,0.1894311316834732,0.6164279700464441,0,0,12,0,0,C
+leaky_truth,Hantush-Jacob leaky truth,Theis fixed-rate,12,0.4291105112488668,0.1894311316834732,0.6164279700464441,0,0,12,0,0,C
+leaky_truth,Hantush-Jacob leaky truth,Hantush-Jacob leaky,12,0.3922201441299532,0.1640707390430583,0.6103660443204149,0,0,12,0,6,C
+leaky_truth,Hantush-Jacob leaky truth,Cooper-Jacob late-time,12,0.699206603098274,0.2437540857664869,0.8052800090899503,0,0,12,0,0,C
+leaky_truth,Hantush-Jacob leaky truth,Lagging Darcy no-leakage,12,0.11324323281746906,0.26997788214297164,0.5918435939287976,0,0,12,0,4,C
+leaky_truth,Hantush-Jacob leaky truth,Lagging Darcy with leakage,12,1.4415341616629966,0.5861007359035817,0.5726619742423522,0,0,4,8,6,D
+recovery,Pumping plus recovery schedule,Theis schedule-aware,12,0.08266729331215568,0.024848984991536503,0.6114095147706706,0,8,4,0,0,C
+recovery,Pumping plus recovery schedule,Theis fixed-rate,12,0.6897858720664666,0.2982073308152751,0.7436311949725634,0,0,12,0,0,C
+recovery,Pumping plus recovery schedule,Hantush-Jacob leaky,12,0.0974656898424193,0.021375104428046625,0.6105355003068329,0,1,11,0,10,C
+recovery,Pumping plus recovery schedule,Cooper-Jacob late-time,12,25.975465606313158,13.815510557964274,2.036292253098221,0,0,0,12,12,D
+recovery,Pumping plus recovery schedule,Lagging Darcy no-leakage,12,0.15070539532986876,0.12502090114387682,0.5449800316108034,0,3,9,0,7,C
+recovery,Pumping plus recovery schedule,Lagging Darcy with leakage,12,0.34588539646881344,0.041757594505895446,0.5410945604310139,0,0,12,0,10,C
+step_rate,Step-rate pumping schedule,Theis schedule-aware,12,0.12737228161161615,0.014845766878690169,0.6099718632748703,0,7,5,0,0,C
+step_rate,Step-rate pumping schedule,Theis fixed-rate,12,0.3731154559750472,0.14031942807317307,0.6178425004944799,0,1,11,0,0,C
+step_rate,Step-rate pumping schedule,Hantush-Jacob leaky,12,0.15065607391819386,0.017074054399766586,0.6090698084894726,0,0,12,0,10,C
+step_rate,Step-rate pumping schedule,Cooper-Jacob late-time,12,0.6826240920086319,0.3173188192862625,0.8274811462939065,0,0,12,0,0,C
+step_rate,Step-rate pumping schedule,Lagging Darcy no-leakage,12,0.24876450678022904,0.09298707772205515,0.5796957603629123,0,3,9,0,4,C
+step_rate,Step-rate pumping schedule,Lagging Darcy with leakage,12,0.9997457345629945,0.3278700954852971,0.5716932080286385,0,0,6,6,7,D
+theis_clean,Theis homogeneous truth,Theis schedule-aware,1,8.881784197001248e-16,2.2204460492503128e-16,5.4622153405382e-16,1,0,0,0,0,A
+theis_clean,Theis homogeneous truth,Theis fixed-rate,1,8.881784197001248e-16,2.2204460492503128e-16,5.4622153405382e-16,1,0,0,0,0,A
+theis_clean,Theis homogeneous truth,Hantush-Jacob leaky,1,0.0006930388602422785,0.00040684684334442266,0.0005915605405811481,0,0,1,0,1,C
+theis_clean,Theis homogeneous truth,Cooper-Jacob late-time,1,0.22678436042880495,0.3377588482294828,0.4291996465312825,0,0,1,0,0,C
+theis_clean,Theis homogeneous truth,Lagging Darcy no-leakage,1,0.04187115459268138,0.01775691546284914,0.018273802640683328,1,0,0,0,0,A
+theis_clean,Theis homogeneous truth,Lagging Darcy with leakage,1,0.10645855286170039,0.014529085113392988,0.014611272137192021,0,1,0,0,0,B
+theis_noise,Theis plus measurement noise,Theis schedule-aware,12,0.2192837663553337,0.03205595334882512,0.8017199911947136,0,2,10,0,0,C
+theis_noise,Theis plus measurement noise,Theis fixed-rate,12,0.2192837663553337,0.03205595334882512,0.8017199911947136,0,2,10,0,0,C
+theis_noise,Theis plus measurement noise,Hantush-Jacob leaky,12,0.23995590839302833,0.03573136377925606,0.8006108094188129,0,0,12,0,10,C
+theis_noise,Theis plus measurement noise,Cooper-Jacob late-time,12,0.21861119862109468,0.32773671903825896,0.902684370005435,0,0,12,0,0,C
+theis_noise,Theis plus measurement noise,Lagging Darcy no-leakage,12,0.357230999193619,0.12422347581187916,0.7116839091282525,0,0,12,0,5,C
+theis_noise,Theis plus measurement noise,Lagging Darcy with leakage,12,1.312540276370541,0.42892774911847753,0.7087091972470871,0,0,5,7,6,D

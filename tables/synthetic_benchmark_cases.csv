@@ -1,0 +1,75 @@
+scenario_id,family,split,truth_model,noise_sd_m,delay_truth_s,tau_q_truth_s,tau_s_truth_s,leakage_b_truth_m,observation_count,max_observed_drawdown_m
+theis_clean_00,theis_clean,verification,Theis homogeneous truth,0.0,0.0,0.0,0.0,,48,0.4522450360085881
+leaky_clean_00,leaky_clean,holdout,Hantush-Jacob clean leaky truth,0.0,0.0,0.0,0.0,35.0,48,0.292918655981329
+theis_noise_00,theis_noise,calibration,Theis plus measurement noise,0.01,0.0,0.0,0.0,,48,0.4627659628291034
+theis_noise_01,theis_noise,calibration,Theis plus measurement noise,0.01,0.0,0.0,0.0,,48,0.4473518252540164
+theis_noise_02,theis_noise,calibration,Theis plus measurement noise,0.01,0.0,0.0,0.0,,48,0.4447055472839415
+theis_noise_03,theis_noise,calibration,Theis plus measurement noise,0.01,0.0,0.0,0.0,,48,0.46289943146667495
+theis_noise_04,theis_noise,calibration,Theis plus measurement noise,0.01,0.0,0.0,0.0,,48,0.44387512528324485
+theis_noise_05,theis_noise,calibration,Theis plus measurement noise,0.01,0.0,0.0,0.0,,48,0.4566132827671
+theis_noise_06,theis_noise,holdout,Theis plus measurement noise,0.01,0.0,0.0,0.0,,48,0.44675850162391584
+theis_noise_07,theis_noise,holdout,Theis plus measurement noise,0.01,0.0,0.0,0.0,,48,0.44179833266428314
+theis_noise_08,theis_noise,holdout,Theis plus measurement noise,0.01,0.0,0.0,0.0,,48,0.4529933233767758
+theis_noise_09,theis_noise,holdout,Theis plus measurement noise,0.01,0.0,0.0,0.0,,48,0.4442681419862464
+theis_noise_10,theis_noise,holdout,Theis plus measurement noise,0.01,0.0,0.0,0.0,,48,0.45283772065040806
+theis_noise_11,theis_noise,holdout,Theis plus measurement noise,0.01,0.0,0.0,0.0,,48,0.4443078487652682
+leaky_truth_00,leaky_truth,calibration,Hantush-Jacob leaky truth,0.006,0.0,0.0,0.0,35.0,48,0.2992312120736382
+leaky_truth_01,leaky_truth,calibration,Hantush-Jacob leaky truth,0.006,0.0,0.0,0.0,35.0,48,0.28998272952858595
+leaky_truth_02,leaky_truth,calibration,Hantush-Jacob leaky truth,0.006,0.0,0.0,0.0,35.0,48,0.28839496274654103
+leaky_truth_03,leaky_truth,calibration,Hantush-Jacob leaky truth,0.006,0.0,0.0,0.0,35.0,48,0.29931129325618105
+leaky_truth_04,leaky_truth,calibration,Hantush-Jacob leaky truth,0.006,0.0,0.0,0.0,35.0,48,0.287896709546123
+leaky_truth_05,leaky_truth,calibration,Hantush-Jacob leaky truth,0.006,0.0,0.0,0.0,35.0,48,0.29553960403643614
+leaky_truth_06,leaky_truth,holdout,Hantush-Jacob leaky truth,0.006,0.0,0.0,0.0,35.0,48,0.28962673535052563
+leaky_truth_07,leaky_truth,holdout,Hantush-Jacob leaky truth,0.006,0.0,0.0,0.0,35.0,48,0.2933812464864229
+leaky_truth_08,leaky_truth,holdout,Hantush-Jacob leaky truth,0.006,0.0,0.0,0.0,35.0,48,0.29336762840224156
+leaky_truth_09,leaky_truth,holdout,Hantush-Jacob leaky truth,0.006,0.0,0.0,0.0,35.0,48,0.28813251956792396
+leaky_truth_10,leaky_truth,holdout,Hantush-Jacob leaky truth,0.006,0.0,0.0,0.0,35.0,48,0.3006138409051242
+leaky_truth_11,leaky_truth,holdout,Hantush-Jacob leaky truth,0.006,0.0,0.0,0.0,35.0,48,0.28815634363533704
+step_rate_00,step_rate,calibration,Step-rate pumping schedule,0.006,0.0,0.0,0.0,,48,0.35557906429666297
+step_rate_01,step_rate,calibration,Step-rate pumping schedule,0.006,0.0,0.0,0.0,,48,0.34633058175161074
+step_rate_02,step_rate,calibration,Step-rate pumping schedule,0.006,0.0,0.0,0.0,,48,0.3447428149695658
+step_rate_03,step_rate,calibration,Step-rate pumping schedule,0.006,0.0,0.0,0.0,,48,0.35565914547920585
+step_rate_04,step_rate,calibration,Step-rate pumping schedule,0.006,0.0,0.0,0.0,,48,0.3442445617691478
+step_rate_05,step_rate,calibration,Step-rate pumping schedule,0.006,0.0,0.0,0.0,,48,0.35188745625946094
+step_rate_06,step_rate,holdout,Step-rate pumping schedule,0.006,0.0,0.0,0.0,,48,0.34597458757355043
+step_rate_07,step_rate,holdout,Step-rate pumping schedule,0.006,0.0,0.0,0.0,,48,0.3429984861977708
+step_rate_08,step_rate,holdout,Step-rate pumping schedule,0.006,0.0,0.0,0.0,,48,0.34971548062526636
+step_rate_09,step_rate,holdout,Step-rate pumping schedule,0.006,0.0,0.0,0.0,,48,0.34448037179094876
+step_rate_10,step_rate,holdout,Step-rate pumping schedule,0.006,0.0,0.0,0.0,,48,0.3496221189894458
+step_rate_11,step_rate,holdout,Step-rate pumping schedule,0.006,0.0,0.0,0.0,,48,0.34450419585836184
+recovery_00,recovery,calibration,Pumping plus recovery schedule,0.006,0.0,0.0,0.0,,58,0.36691496318886024
+recovery_01,recovery,calibration,Pumping plus recovery schedule,0.006,0.0,0.0,0.0,,58,0.357666480643808
+recovery_02,recovery,calibration,Pumping plus recovery schedule,0.006,0.0,0.0,0.0,,58,0.3560787138617631
+recovery_03,recovery,calibration,Pumping plus recovery schedule,0.006,0.0,0.0,0.0,,58,0.3669950443714031
+recovery_04,recovery,calibration,Pumping plus recovery schedule,0.006,0.0,0.0,0.0,,58,0.3555804606613451
+recovery_05,recovery,calibration,Pumping plus recovery schedule,0.006,0.0,0.0,0.0,,58,0.3632233551516582
+recovery_06,recovery,holdout,Pumping plus recovery schedule,0.006,0.0,0.0,0.0,,58,0.3573104864657477
+recovery_07,recovery,holdout,Pumping plus recovery schedule,0.006,0.0,0.0,0.0,,58,0.35433438508996806
+recovery_08,recovery,holdout,Pumping plus recovery schedule,0.006,0.0,0.0,0.0,,58,0.36105137951746363
+recovery_09,recovery,holdout,Pumping plus recovery schedule,0.006,0.0,0.0,0.0,,58,0.35581627068314603
+recovery_10,recovery,holdout,Pumping plus recovery schedule,0.006,0.0,0.0,0.0,,58,0.36095801788164306
+recovery_11,recovery,holdout,Pumping plus recovery schedule,0.006,0.0,0.0,0.0,,58,0.3558400947505591
+lagging_darcy_truth_00,lagging_darcy_truth,calibration,Lagging Darcy truth,0.006,0.0,100.0,1000.0,,48,0.4589326673147063
+lagging_darcy_truth_01,lagging_darcy_truth,calibration,Lagging Darcy truth,0.006,0.0,100.0,1000.0,,48,0.44968418476965405
+lagging_darcy_truth_02,lagging_darcy_truth,calibration,Lagging Darcy truth,0.006,0.0,100.0,1000.0,,48,0.44809641798760913
+lagging_darcy_truth_03,lagging_darcy_truth,calibration,Lagging Darcy truth,0.006,0.0,100.0,1000.0,,48,0.45901274849724916
+lagging_darcy_truth_04,lagging_darcy_truth,calibration,Lagging Darcy truth,0.006,0.0,100.0,1000.0,,48,0.4475981647871911
+lagging_darcy_truth_05,lagging_darcy_truth,calibration,Lagging Darcy truth,0.006,0.0,100.0,1000.0,,48,0.45524105927750425
+lagging_darcy_truth_06,lagging_darcy_truth,holdout,Lagging Darcy truth,0.006,0.0,100.0,1000.0,,48,0.44932819059159373
+lagging_darcy_truth_07,lagging_darcy_truth,holdout,Lagging Darcy truth,0.006,0.0,100.0,1000.0,,48,0.4463520892158141
+lagging_darcy_truth_08,lagging_darcy_truth,holdout,Lagging Darcy truth,0.006,0.0,100.0,1000.0,,48,0.45306908364330967
+lagging_darcy_truth_09,lagging_darcy_truth,holdout,Lagging Darcy truth,0.006,0.0,100.0,1000.0,,48,0.44783397480899206
+lagging_darcy_truth_10,lagging_darcy_truth,holdout,Lagging Darcy truth,0.006,0.0,100.0,1000.0,,48,0.4529757220074891
+lagging_darcy_truth_11,lagging_darcy_truth,holdout,Lagging Darcy truth,0.006,0.0,100.0,1000.0,,48,0.44785779887640514
+lagging_leaky_truth_00,lagging_leaky_truth,calibration,Lagging Darcy leaky truth,0.006,0.0,100.0,1000.0,35.0,48,0.2979535986613429
+lagging_leaky_truth_01,lagging_leaky_truth,calibration,Lagging Darcy leaky truth,0.006,0.0,100.0,1000.0,35.0,48,0.2887051161162907
+lagging_leaky_truth_02,lagging_leaky_truth,calibration,Lagging Darcy leaky truth,0.006,0.0,100.0,1000.0,35.0,48,0.28730229282314523
+lagging_leaky_truth_03,lagging_leaky_truth,calibration,Lagging Darcy leaky truth,0.006,0.0,100.0,1000.0,35.0,48,0.2980336798438858
+lagging_leaky_truth_04,lagging_leaky_truth,calibration,Lagging Darcy leaky truth,0.006,0.0,100.0,1000.0,35.0,48,0.28661909613382774
+lagging_leaky_truth_05,lagging_leaky_truth,calibration,Lagging Darcy leaky truth,0.006,0.0,100.0,1000.0,35.0,48,0.2942619906241409
+lagging_leaky_truth_06,lagging_leaky_truth,holdout,Lagging Darcy leaky truth,0.006,0.0,100.0,1000.0,35.0,48,0.28834912193823037
+lagging_leaky_truth_07,lagging_leaky_truth,holdout,Lagging Darcy leaky truth,0.006,0.0,100.0,1000.0,35.0,48,0.2923214610438373
+lagging_leaky_truth_08,lagging_leaky_truth,holdout,Lagging Darcy leaky truth,0.006,0.0,100.0,1000.0,35.0,48,0.2920900149899463
+lagging_leaky_truth_09,lagging_leaky_truth,holdout,Lagging Darcy leaky truth,0.006,0.0,100.0,1000.0,35.0,48,0.2868549061556287
+lagging_leaky_truth_10,lagging_leaky_truth,holdout,Lagging Darcy leaky truth,0.006,0.0,100.0,1000.0,35.0,48,0.29955405546253866
+lagging_leaky_truth_11,lagging_leaky_truth,holdout,Lagging Darcy leaky truth,0.006,0.0,100.0,1000.0,35.0,48,0.2868787302230418
