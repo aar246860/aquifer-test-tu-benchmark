@@ -1,4 +1,4 @@
-"""Generate an evidence-based graphical abstract candidate for Figure 1.
+﻿"""Generate an evidence-based graphical abstract candidate for Figure 1.
 
 This script builds a paste-ready PNG from existing TU_Lag analysis outputs.
 Flow boxes are schematic, but all plotted curves, fields, model-factor
@@ -375,11 +375,11 @@ def panel_c(ax: plt.Axes) -> None:
     ax_s.set_xticks([])
     ax_s.set_yticks([])
 
-    fit_cols = ["pathway", "T_fit_m2_s", "S_fit", "truth_T_ref_m2_s", "truth_S_ref", "quality_gate"]
+    fit_cols = ["pathway", "T_fit_m2_s", "S_fit", "truth_T_ref_m2_s", "truth_S_ref", "QUALITY_CONTROL"]
     fits = pd.read_csv(TABLE_DIR / "mf6_mega_benchmark_fits.csv", usecols=fit_cols)
     fits = fits[fits["pathway"].isin(PATHWAYS)].dropna(subset=["T_fit_m2_s", "S_fit", "truth_T_ref_m2_s", "truth_S_ref"])
-    if "quality_gate" in fits:
-        q = fits[fits["quality_gate"].astype(str).str.lower().isin(["true", "1"])]
+    if "QUALITY_CONTROL" in fits:
+        q = fits[fits["QUALITY_CONTROL"].astype(str).str.lower().isin(["true", "1"])]
         if q.shape[0] > 100:
             fits = q
     fits = fits.sample(n=min(4200, fits.shape[0]), random_state=20260612)
@@ -428,7 +428,7 @@ def panel_d(ax: plt.Axes) -> None:
     arrow_axes(ax, (0.62, 0.58), (0.70, 0.58), lw=0.85)
     arrow_axes(ax, (0.62, 0.38), (0.70, 0.38), lw=0.85)
 
-    gate = pd.read_csv(TABLE_DIR / "mf6_mega_field_applicability_gate_summary.csv")
+    gate = pd.read_csv(TABLE_DIR / "mf6_mega_field_applicability_criteria_summary.csv")
     primary = gate[gate["applicability_level"] == "primary_conservative"].copy()
     primary = primary.set_index("field_case").reindex(["Massachusetts", "Lovelock Valley"]).reset_index()
     metrics = [
@@ -541,7 +541,7 @@ def write_source_report(path: Path) -> None:
         "- Panel C: MODFLOW benchmark fields from `tables/mf6_mega_benchmark_cases.csv` regenerated through `analysis/mf6_mega_benchmark.py`; model-factor scatter from `tables/mf6_mega_benchmark_fits.csv`.",
         f"  - log K field scenario: `{SELECTED_SCENARIOS.get('log K field', 'not recorded')}`.",
         f"  - log S field scenario: `{SELECTED_SCENARIOS.get('log S field', 'not recorded')}`.",
-        "- Panel D: field applicability factors from `tables/mf6_mega_field_applicability_gate_summary.csv`.",
+        "- Panel D: field applicability factors from `tables/mf6_mega_field_applicability_criteria_summary.csv`.",
         "- Panel E: management inheritance diagnostics from `tables/field_bma_management_summary.csv` and `tables/field_bma_management_well_diagnostics.csv`.",
         "",
         "The flow boxes are conceptual; all plotted numerical elements are regenerated from existing project outputs.",
@@ -600,3 +600,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+

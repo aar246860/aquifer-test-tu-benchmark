@@ -367,7 +367,7 @@ def make_fig14_verification() -> None:
 
 def make_fig15_cov_attribution() -> None:
     fits = pd.read_csv(TABLE_DIR / "mf6_mega_benchmark_fits.csv")
-    fits = fits[fits["quality_gate"].astype(bool)].copy()
+    fits = fits[fits["QUALITY_CONTROL"].astype(bool)].copy()
     fits["M_T"] = np.exp(fits["lnM_T"])
     fits["M_S"] = np.exp(fits["lnM_S"])
     fits["M_response_time"] = np.exp(fits["lnM_response_time"])
@@ -436,8 +436,8 @@ def parse_bic_summary(text: str) -> dict[str, int]:
     return out
 
 
-def make_fig16_field_gate() -> None:
-    gate = pd.read_csv(TABLE_DIR / "mf6_mega_field_applicability_gate_summary.csv")
+def make_fig16_FIELD_CRITERIA() -> None:
+    gate = pd.read_csv(TABLE_DIR / "mf6_mega_field_applicability_criteria_summary.csv")
     fig, axes = plt.subplots(2, 2, figsize=(7.2, 5.6), constrained_layout=True)
 
     ax = axes[0, 0]
@@ -554,9 +554,10 @@ def main() -> None:
     make_fig13_design()
     make_fig14_verification()
     make_fig15_cov_attribution()
-    make_fig16_field_gate()
+    make_fig16_FIELD_CRITERIA()
 
 
 if __name__ == "__main__":
     main()
+
 

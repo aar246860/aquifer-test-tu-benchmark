@@ -1,4 +1,4 @@
-scenario_class,pathway,response_count,unique_scenarios,quality_gate_fraction,boundary_hit_fraction,bic_supported_fraction,median_delta_bic,median_sd_eta
+﻿scenario_class,pathway,response_count,unique_scenarios,QUALITY_CONTROL_fraction,boundary_hit_fraction,bic_supported_fraction,median_delta_bic,median_sd_eta
 anisotropic heterogeneous K,Hantush-Jacob leaky,4001,1000,0.11347163209197701,0.873531617095726,0.5161209697575606,9.33700492316408,0.36472813687495
 anisotropic heterogeneous K,Lagging Darcy no-leakage,4001,1000,0.8115471132216946,0.13896525868532866,0.94976255936016,0.0,0.3304607229028399
 anisotropic heterogeneous K,Lagging Darcy with leakage,4001,1000,0.7400649837540615,0.2316920769807548,0.9697575606098475,3.3327242668421206,0.3282651200982667
@@ -39,3 +39,4 @@ vertical leakage,Hantush-Jacob leaky,4000,1000,0.288,0.558,0.5785,6.897184035414
 vertical leakage,Lagging Darcy no-leakage,4000,1000,0.54025,0.24075,0.70825,4.07498297834907,0.3481706484480326
 vertical leakage,Lagging Darcy with leakage,4000,1000,0.7625,0.22625,0.987,2.4319812285255358,0.3343553473981803
 vertical leakage,Theis confined,4000,1000,0.5145,0.12675,0.58475,6.150305806647774,0.36783203761573086
+

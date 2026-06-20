@@ -39,7 +39,7 @@ FULL_FITS_CSV = TABLE_DIR / "mf6_mega_benchmark_fits.csv"
 FULL_DRAWDOWN_CSV = TABLE_DIR / "mf6_mega_benchmark_drawdown.csv"
 FULL_COV_BY_CLASS_CSV = TABLE_DIR / "mf6_mega_model_factor_cov_by_class.csv"
 FULL_COV_BY_LAYOUT_CSV = TABLE_DIR / "mf6_mega_model_factor_cov_by_class_layout.csv"
-FULL_COV_QUALITY_GATED_CSV = TABLE_DIR / "mf6_mega_model_factor_cov_quality_gated_by_class.csv"
+FULL_COV_QUALITY_CONTROLD_CSV = TABLE_DIR / "mf6_mega_model_factor_cov_screened_by_class.csv"
 FULL_COV_BIC_BEST_CSV = TABLE_DIR / "mf6_mega_model_factor_cov_bic_best_by_class.csv"
 PILOT_SUMMARY_JSON = OUT_DIR / "mf6_mega_benchmark_pilot_summary.json"
 CAPACITY_JSON = OUT_DIR / "mf6_mega_benchmark_capacity.json"
@@ -998,15 +998,15 @@ def command_aggregate(args: argparse.Namespace) -> None:
         aggregate_drawdown_for_ids(scenario_ids, FULL_DRAWDOWN_CSV)
     if not fits.empty:
         fits["delta_bic"] = fits["bic"] - fits.groupby(["scenario_id", "well"])["bic"].transform("min")
-        fits["quality_gate"] = (~fits["boundary_hit"].astype(bool)) & (fits["delta_bic"] <= 10.0)
+        fits["QUALITY_CONTROL"] = (~fits["boundary_hit"].astype(bool)) & (fits["delta_bic"] <= 10.0)
         atomic_csv(FULL_FITS_CSV, fits)
         by_class = model_factor_cov_summary(fits, ["scenario_class", "pathway"])
         by_layout = model_factor_cov_summary(fits, ["scenario_class", "obs_layout", "pathway"])
         atomic_csv(FULL_COV_BY_CLASS_CSV, by_class)
         atomic_csv(FULL_COV_BY_LAYOUT_CSV, by_layout)
-        gated = fits[fits["quality_gate"]].copy()
+        gated = fits[fits["QUALITY_CONTROL"]].copy()
         if not gated.empty:
-            atomic_csv(FULL_COV_QUALITY_GATED_CSV, model_factor_cov_summary(gated, ["scenario_class", "pathway"]))
+            atomic_csv(FULL_COV_QUALITY_CONTROLD_CSV, model_factor_cov_summary(gated, ["scenario_class", "pathway"]))
         best_idx = fits.groupby(["scenario_id", "well"])["bic"].idxmin()
         best = fits.loc[best_idx].copy()
         best = best[~best["boundary_hit"].astype(bool)]
@@ -1022,7 +1022,7 @@ def command_aggregate(args: argparse.Namespace) -> None:
                 "fits_csv": str(FULL_FITS_CSV),
                 "cov_by_class_csv": str(FULL_COV_BY_CLASS_CSV),
                 "cov_by_class_layout_csv": str(FULL_COV_BY_LAYOUT_CSV),
-                "quality_gated_cov_by_class_csv": str(FULL_COV_QUALITY_GATED_CSV),
+                "QUALITY_CONTROLd_cov_by_class_csv": str(FULL_COV_QUALITY_CONTROLD_CSV),
                 "bic_best_cov_by_class_csv": str(FULL_COV_BIC_BEST_CSV),
                 "drawdown_csv": str(FULL_DRAWDOWN_CSV) if args.drawdown else "not requested",
             },
@@ -1081,5 +1081,6 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
 
 

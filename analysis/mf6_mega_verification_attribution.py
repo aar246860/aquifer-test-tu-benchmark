@@ -24,9 +24,9 @@ MF6_CONSISTENCY_CSV = TABLE_DIR / "mf6_mega_mf6_to_analytical_consistency.csv"
 MF6_CONSISTENCY_SUMMARY_CSV = TABLE_DIR / "mf6_mega_mf6_to_analytical_consistency_summary.csv"
 VARIANCE_ATTRIBUTION_CSV = TABLE_DIR / "mf6_mega_variance_attribution.csv"
 OBS_LAYOUT_EFFECTS_CSV = TABLE_DIR / "mf6_mega_observation_layout_effects.csv"
-QUALITY_GATE_SUMMARY_CSV = TABLE_DIR / "mf6_mega_quality_gate_summary.csv"
-FIELD_GATE_CSV = TABLE_DIR / "mf6_mega_field_applicability_gate.csv"
-FIELD_GATE_SUMMARY_CSV = TABLE_DIR / "mf6_mega_field_applicability_gate_summary.csv"
+QUALITY_CONTROL_SUMMARY_CSV = TABLE_DIR / "mf6_mega_quality_control_summary.csv"
+FIELD_CRITERIA_CSV = TABLE_DIR / "mf6_mega_field_applicability_criteria.csv"
+FIELD_CRITERIA_SUMMARY_CSV = TABLE_DIR / "mf6_mega_field_applicability_criteria_summary.csv"
 REPORT_MD = OUT_DIR / "mf6_mega_verification_attribution_report.md"
 
 PATHWAYS = [
@@ -284,8 +284,8 @@ def variance_attribution() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
     fits = pd.read_csv(TABLE_DIR / "mf6_mega_benchmark_fits.csv")
     if "delta_bic" not in fits:
         fits["delta_bic"] = fits["bic"] - fits.groupby(["scenario_id", "well"])["bic"].transform("min")
-    if "quality_gate" not in fits:
-        fits["quality_gate"] = (~fits["boundary_hit"].astype(bool)) & (fits["delta_bic"] <= 10.0)
+    if "QUALITY_CONTROL" not in fits:
+        fits["QUALITY_CONTROL"] = (~fits["boundary_hit"].astype(bool)) & (fits["delta_bic"] <= 10.0)
     fits = add_bins(fits)
     outcomes = ["sd_eta", "lnM_T", "lnM_S", "lnM_response_time"]
     factors = [
@@ -308,7 +308,7 @@ def variance_attribution() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
         "support_spread_bin",
     ]
     rows = []
-    for dataset, frame in [("all_fits", fits), ("quality_gated", fits[fits["quality_gate"]].copy())]:
+    for dataset, frame in [("all_fits", fits), ("QUALITY_CONTROLd", fits[fits["QUALITY_CONTROL"]].copy())]:
         for outcome in outcomes:
             for factor in factors:
                 result = marginal_eta_squared(frame, outcome, factor)
@@ -321,7 +321,7 @@ def variance_attribution() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
         .agg(
             response_count=("scenario_id", "count"),
             unique_scenarios=("scenario_id", "nunique"),
-            quality_gate_fraction=("quality_gate", "mean"),
+            QUALITY_CONTROL_fraction=("QUALITY_CONTROL", "mean"),
             boundary_hit_fraction=("boundary_hit", "mean"),
             bic_supported_fraction=("delta_bic", lambda x: float(np.mean(pd.to_numeric(x, errors="coerce") <= 10.0))),
             median_delta_bic=("delta_bic", "median"),
@@ -329,9 +329,9 @@ def variance_attribution() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
         )
         .sort_values(["scenario_class", "pathway"])
     )
-    quality.to_csv(QUALITY_GATE_SUMMARY_CSV, index=False)
+    quality.to_csv(QUALITY_CONTROL_SUMMARY_CSV, index=False)
 
-    gated = fits[fits["quality_gate"]].copy()
+    gated = fits[fits["QUALITY_CONTROL"]].copy()
     layout_rows = []
     for keys, group in gated.groupby(["scenario_class", "pathway", "obs_layout"], observed=True, sort=False):
         scenario_class, pathway, obs_layout = keys
@@ -383,8 +383,8 @@ def field_case_diagnostics() -> dict[str, dict]:
     }
 
 
-def field_applicability_gate() -> tuple[pd.DataFrame, pd.DataFrame]:
-    cov = pd.read_csv(TABLE_DIR / "mf6_mega_model_factor_cov_quality_gated_by_class.csv").rename(
+def field_applicability_criteria() -> tuple[pd.DataFrame, pd.DataFrame]:
+    cov = pd.read_csv(TABLE_DIR / "mf6_mega_model_factor_cov_screened_by_class.csv").rename(
         columns={"scenario_class": "benchmark_class"}
     )
     diagnostics = field_case_diagnostics()
@@ -458,7 +458,7 @@ def field_applicability_gate() -> tuple[pd.DataFrame, pd.DataFrame]:
         "sensitivity or exclusion gate; do not use as default transformation prior",
     )
     gate["claim_boundary"] = "scenario-conditioned transformation factor; not a universal design COV and not proof of true field T/S recovery"
-    gate.to_csv(FIELD_GATE_CSV, index=False)
+    gate.to_csv(FIELD_CRITERIA_CSV, index=False)
 
     summary = (
         gate.groupby(["field_case", "applicability_level", "benchmark_class"], as_index=False)
@@ -477,7 +477,7 @@ def field_applicability_gate() -> tuple[pd.DataFrame, pd.DataFrame]:
         )
         .sort_values(["field_case", "applicability_level", "benchmark_class"])
     )
-    summary.to_csv(FIELD_GATE_SUMMARY_CSV, index=False)
+    summary.to_csv(FIELD_CRITERIA_SUMMARY_CSV, index=False)
     return gate, summary
 
 
@@ -489,7 +489,7 @@ def write_report(
     field_summary: pd.DataFrame,
 ) -> None:
     top_attr = (
-        attribution[attribution["dataset"].eq("quality_gated")]
+        attribution[attribution["dataset"].eq("QUALITY_CONTROLd")]
         .sort_values(["outcome", "eta2_marginal"], ascending=[True, False])
         .groupby("outcome")
         .head(5)
@@ -504,14 +504,14 @@ def write_report(
         "## MODFLOW 6 to analytical consistency",
         mf6_summary.to_markdown(index=False),
         "",
-        "## Quality gate summary",
-        "- Quality gate is `no boundary hit` and `Delta BIC <= 10`.",
+        "## Quality control summary",
+        "- Screened records require no boundary hit and Delta BIC <= 10.",
         quality.head(20).to_markdown(index=False),
         "",
         "## Main variance-attribution signals",
         top_attr[["outcome", "factor", "eta2_marginal", "top_level", "top_level_mean", "bottom_level", "bottom_level_mean"]].to_markdown(index=False),
         "",
-        "## Field applicability gate",
+        "## Field applicability criteria",
         field_summary.to_markdown(index=False),
         "",
         "## Claim boundary",
@@ -525,7 +525,7 @@ def main() -> None:
     analytical = analytical_limit_verification()
     mf6_rows, mf6_summary = mf6_to_analytical_consistency()
     attribution, quality, _layout = variance_attribution()
-    _gate, field_summary = field_applicability_gate()
+    _gate, field_summary = field_applicability_criteria()
     write_report(analytical, mf6_summary, attribution, quality, field_summary)
     summary = {
         "analytical_limit_rows": int(analytical.shape[0]),
@@ -533,17 +533,17 @@ def main() -> None:
         "mf6_consistency_rows": int(mf6_rows.shape[0]),
         "mf6_consistency_confirmed": int(mf6_rows["pass_flag"].sum()),
         "variance_attribution_rows": int(attribution.shape[0]),
-        "quality_gate_rows": int(quality.shape[0]),
-        "field_gate_rows": int(field_summary.shape[0]),
+        "QUALITY_CONTROL_rows": int(quality.shape[0]),
+        "FIELD_CRITERIA_rows": int(field_summary.shape[0]),
         "outputs": {
             "analytical_limit_csv": str(ANALYTICAL_LIMIT_CSV),
             "mf6_consistency_csv": str(MF6_CONSISTENCY_CSV),
             "mf6_consistency_summary_csv": str(MF6_CONSISTENCY_SUMMARY_CSV),
             "variance_attribution_csv": str(VARIANCE_ATTRIBUTION_CSV),
-            "quality_gate_summary_csv": str(QUALITY_GATE_SUMMARY_CSV),
+            "QUALITY_CONTROL_summary_csv": str(QUALITY_CONTROL_SUMMARY_CSV),
             "observation_layout_effects_csv": str(OBS_LAYOUT_EFFECTS_CSV),
-            "field_gate_csv": str(FIELD_GATE_CSV),
-            "field_gate_summary_csv": str(FIELD_GATE_SUMMARY_CSV),
+            "FIELD_CRITERIA_csv": str(FIELD_CRITERIA_CSV),
+            "FIELD_CRITERIA_summary_csv": str(FIELD_CRITERIA_SUMMARY_CSV),
             "report_md": str(REPORT_MD),
         },
     }
@@ -552,5 +552,6 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
 
 

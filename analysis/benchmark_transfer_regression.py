@@ -156,14 +156,14 @@ def build_benchmark_data() -> pd.DataFrame:
         "sd_eta",
         "bic",
         "boundary_hit",
-        "quality_gate",
+        "QUALITY_CONTROL",
         "lnM_T",
         "lnM_S",
         "lnM_response_time",
     ]
     fits = pd.read_csv(TABLE_DIR / "mf6_mega_benchmark_fits.csv", usecols=usecols)
     fits["boundary_hit"] = fits["boundary_hit"].astype(bool)
-    fits["quality_gate"] = fits["quality_gate"].astype(bool)
+    fits["QUALITY_CONTROL"] = fits["QUALITY_CONTROL"].astype(bool)
 
     grouped = (
         fits.groupby(["scenario_id", "scenario_class", "pathway"], observed=True)
@@ -214,7 +214,7 @@ def build_benchmark_data() -> pd.DataFrame:
     features["sd_eta_range"] = features[sd_cols].max(axis=1) - features[sd_cols].min(axis=1)
     features["benchmark_group"] = features["scenario_class"].map(CLASS_TO_GROUP)
 
-    gated = fits[fits["quality_gate"]].copy()
+    gated = fits[fits["QUALITY_CONTROL"]].copy()
     targets = (
         gated.groupby("scenario_id", observed=True)
         .agg(
@@ -485,4 +485,5 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
 

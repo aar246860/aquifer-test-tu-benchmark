@@ -146,7 +146,7 @@ def update_fits(fits: pd.DataFrame, cases: pd.DataFrame) -> pd.DataFrame:
     updated["lnM_response_time"] = np.log((s_fit / t_fit) / (s_ref / t_ref))
     if "delta_bic" not in updated.columns:
         updated["delta_bic"] = updated["bic"] - updated.groupby(["scenario_id", "well"])["bic"].transform("min")
-    updated["quality_gate"] = (~updated["boundary_hit"].astype(bool)) & (pd.to_numeric(updated["delta_bic"], errors="coerce") <= 10.0)
+    updated["QUALITY_CONTROL"] = (~updated["boundary_hit"].astype(bool)) & (pd.to_numeric(updated["delta_bic"], errors="coerce") <= 10.0)
     return updated
 
 
@@ -195,9 +195,9 @@ def write_support_summaries(cases: pd.DataFrame) -> pd.DataFrame:
 def refresh_cov_tables(fits: pd.DataFrame) -> dict[str, int]:
     mega.atomic_csv(mega.FULL_COV_BY_CLASS_CSV, mega.model_factor_cov_summary(fits, ["scenario_class", "pathway"]))
     mega.atomic_csv(mega.FULL_COV_BY_LAYOUT_CSV, mega.model_factor_cov_summary(fits, ["scenario_class", "obs_layout", "pathway"]))
-    gated = fits[fits["quality_gate"]].copy()
+    gated = fits[fits["QUALITY_CONTROL"]].copy()
     if not gated.empty:
-        mega.atomic_csv(mega.FULL_COV_QUALITY_GATED_CSV, mega.model_factor_cov_summary(gated, ["scenario_class", "pathway"]))
+        mega.atomic_csv(mega.FULL_COV_QUALITY_CONTROLD_CSV, mega.model_factor_cov_summary(gated, ["scenario_class", "pathway"]))
     best_idx = fits.groupby(["scenario_id", "well"])["bic"].idxmin()
     best = fits.loc[best_idx].copy()
     best = best[~best["boundary_hit"].astype(bool)]
@@ -205,7 +205,7 @@ def refresh_cov_tables(fits: pd.DataFrame) -> dict[str, int]:
         mega.atomic_csv(mega.FULL_COV_BIC_BEST_CSV, mega.model_factor_cov_summary(best, ["scenario_class", "pathway"]))
     return {
         "all_fit_rows": int(fits.shape[0]),
-        "quality_gate_rows": int(gated.shape[0]),
+        "QUALITY_CONTROL_rows": int(gated.shape[0]),
         "bic_best_rows": int(best.shape[0]),
     }
 
@@ -223,11 +223,11 @@ def main() -> None:
     mega.atomic_csv(CASES_CSV, cases_new)
     mega.atomic_csv(FITS_CSV, fits_new)
 
-    gated_cov = pd.read_csv(mega.FULL_COV_QUALITY_GATED_CSV)
+    gated_cov = pd.read_csv(mega.FULL_COV_QUALITY_CONTROLD_CSV)
     summary = {
         "case_rows": int(cases_new.shape[0]),
         "fit_rows": int(fits_new.shape[0]),
-        "quality_gate_rows": cov_counts["quality_gate_rows"],
+        "QUALITY_CONTROL_rows": cov_counts["QUALITY_CONTROL_rows"],
         "median_cov_M_T": float(gated_cov["cov_M_T"].median()),
         "median_cov_M_S": float(gated_cov["cov_M_S"].median()),
         "median_cov_M_response_time": float(gated_cov["cov_M_response_time"].median()),
@@ -241,7 +241,7 @@ def main() -> None:
             "support_cases": str(EFFECTIVE_SUPPORT_CASES_CSV),
             "support_summary": str(EFFECTIVE_SUPPORT_SUMMARY_CSV),
             "fixed_130_snapshot": str(FIXED_130_SNAPSHOT_CSV),
-            "quality_gated_cov": str(mega.FULL_COV_QUALITY_GATED_CSV),
+            "QUALITY_CONTROLd_cov": str(mega.FULL_COV_QUALITY_CONTROLD_CSV),
         },
         "support_summary_rows": int(support_summary.shape[0]),
     }
@@ -251,5 +251,6 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
 
 
