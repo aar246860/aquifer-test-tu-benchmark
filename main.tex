@@ -352,7 +352,7 @@ The numerical design defines the benchmark scope through two controlled checks. 
 \begin{figure}
 \centering
 \includegraphics[width=\linewidth]{fig13_mf6_benchmark_design.pdf}
-\caption{Numerical groundwater-flow benchmark design, implemented here with MODFLOW 6. Panel (a) shows the finite difference grid, pumping well, observation wells, and scenario-specific effective support envelope used to define the pumping-test reference. Panels (b) and (c) show representative heterogeneous and anisotropic hydraulic conductivity fields. Panel (d) shows a representative heterogeneous storage field. Panels (e) and (f) show the combined leakage, boundary, hydraulic conductivity, and storage setting used to stress the transformation from numerical drawdown response to apparent analytical parameters. The numerical fields supply the controlled drawdown responses interpreted by the four analytical solutions.}
+\caption{Numerical groundwater-flow benchmark design with MODFLOW 6 through (a) the finite-difference grid, extraction well, observation wells, and scenario-specific effective support envelope for the aquifer-test reference; (b) a representative heterogeneous hydraulic conductivity field; (c) a representative anisotropic hydraulic conductivity field; (d) a representative heterogeneous storage field; (e) combined leakage, boundary, hydraulic conductivity, and storage conditions for transformation stress; and (f) paired numerical response classes for the four analytical interpretations. The numerical fields define controlled drawdown responses for interpretation by the four analytical solutions.}
 \label{fig:mf6design}
 \end{figure}
 
@@ -532,7 +532,7 @@ These numerical results are used as scenario-conditioned transformation factors.
 \begin{table}
 \centering
 \scriptsize
-\caption{Numerical groundwater-flow benchmark used to define the scope of field inference. MODFLOW 6 supplies the controlled response generator used here. The benchmark provides scenario-conditioned transformation model factors for the four analytical interpretations and defines the conditions under which those factors can inform field diagnostics.}
+\caption{Numerical groundwater-flow benchmark for field-inference scope via MODFLOW 6 as the controlled response generator, scenario-conditioned transformation model factors for the four analytical interpretations, and field conditions under which benchmark factors can inform field diagnostics.}
 \label{tab:mf6benchmark}
 \setlength{\tabcolsep}{3pt}
 \renewcommand{\arraystretch}{0.92}
@@ -551,14 +551,14 @@ Applicability & Massachusetts receives a primary conservative match for combined
 \begin{figure}
 \centering
 \includegraphics[width=\linewidth]{fig14_mf6_verification_sensitivity.pdf}
-\caption{Analytical verification and numerical consistency checks. Panels (a) and (b) show analytical limiting behavior as a function of observation distance; the dashed line in panel (a) marks the log factor tolerance used for the limiting checks. Panels (c) and (d) show numerical consistency with analytical reference responses as grid spacing changes for homogeneous Theis and vertical leakage Hantush generators. The numerical responses are implemented with MODFLOW 6, and the warnings identify finite leakage, near well, and coarse grid limits that constrain the benchmark scope.}
+\caption{Analytical verification and numerical consistency checks through (a) analytical limit behavior versus observation distance and the dashed log factor tolerance for limit checks; (b) additional analytical limit behavior versus observation distance; (c) numerical consistency with homogeneous Theis analytical reference responses across grid intervals; and (d) numerical consistency with vertical leakage Hantush analytical reference responses across grid intervals. MODFLOW 6 numerical responses and caution labels define finite leakage, near-well, and coarse-grid limits for benchmark scope.}
 \label{fig:mf6verification}
 \end{figure}
 
 \begin{figure}
 \centering
 \includegraphics[width=\linewidth]{fig15_mf6_convergence_cov.pdf}
-\caption{Screened numerical benchmark model factors. Panels (a)--(c) show empirical distribution functions for transmissivity, storage, and response time model factors after excluding active boundary fits and retaining interpretations within $\Delta BIC \leq 10$. The vertical dashed line marks a factor of one. Panel (d) shows the median response log residual standard deviation by observation distance, with dashed lines marking the 90th percentile envelope. These values are scenario-conditioned model factors for the represented benchmark classes.}
+\caption{Screened numerical benchmark model factors through (a) empirical distribution functions for transmissivity model factors after boundary-active fit removal and retention of interpretations within $\Delta BIC \leq 10$; (b) empirical distribution functions for storage model factors under the same screened records; (c) empirical distribution functions for response-time model factors under the same screened records; and (d) median response log residual standard deviation by observation distance, with dashed lines for the 90th percentile envelope. The vertical dashed line in (a)--(c) denotes a factor of one, and all values represent scenario-conditioned model factors for the benchmark classes.}
 \label{fig:mf6cov}
 \end{figure}
 
@@ -571,7 +571,7 @@ The field transfer is therefore reported as a model-factor scale across comparab
 \begin{figure}
 \centering
 \includegraphics[width=\linewidth]{fig05_benchmark_transfer_layer.pdf}
-\caption{Benchmark transfer of aquifer-test transformation uncertainty to field diagnostics. Panel (a) shows the numerical benchmark response-diagnostic space and the positions of the two field cases. Panel (b) compares cross-validated predictions with observed 90th percentile absolute log model factors for transmissivity, storage, and response time. Panel (c) reports the main diagnostic variables used by the regression. Panel (d) gives the benchmark-transferred, 90th-percentile-equivalent model-factor COV values for the two field cases.}
+\caption{Benchmark transfer of aquifer-test transformation uncertainty to field diagnostics through (a) the numerical benchmark response-diagnostic space and the positions of the two field cases; (b) cross-validated predictions versus observed 90th percentile absolute log model factors for transmissivity, storage, and response time; (c) the main diagnostic variables for the regression; and (d) benchmark-transferred, 90th-percentile-equivalent model-factor COV values for the two field cases.}
 \label{fig:benchmarktransfer}
 \end{figure}
 
@@ -584,14 +584,14 @@ The field evidence begins with the observation support of the two real cases (Fi
 \begin{figure}
 \centering
 \includegraphics[width=\linewidth]{fig02_site_layout.pdf}
-\caption{Paired field data spatial support for the two real cases. (a) Massachusetts fractured bedrock retained observation wells. (b) Lovelock Valley MWP2 retained observation wells relative to pumping Well 10. Both panels use coordinates centered on the pumping well and normalized by the maximum retained radial support within the case, so panel shape shows observation geometry rather than absolute field scale. Circles mark retained observation wells, stars mark pumping wells, and colors retain the actual radial distance within each case.}
+\caption{Paired field-data spatial support for the two real cases through (a) Massachusetts fractured bedrock retained observation wells; and (b) Lovelock Valley MWP2 retained observation wells relative to extraction Well 10. Both panels use coordinates centered on the extraction well and normalized by the maximum retained radial support within the case, so panel shape denotes observation geometry rather than absolute field scale. Circles denote retained observation wells, stars denote extraction wells, and colors retain the actual radial distance within each case.}
 \label{fig:layout}
 \end{figure}
 
 \begin{figure}
 \centering
 \includegraphics[width=\linewidth]{fig03_observed_simulated_drawdown.pdf}
-\caption{Massachusetts observed and simulated drawdown curves for the 12 observation wells under the four main interpretation models. Points are measured drawdown; lines show Theis confined, Hantush--Jacob leaky, lagging Darcy without leakage, and lagging Darcy with leakage predictions.}
+\caption{Massachusetts observed and simulated drawdown curves for the 12 observation wells across the four main interpretation models, with measured drawdown as points and Theis confined, Hantush--Jacob leaky, lagging Darcy without leakage, and lagging Darcy with leakage predictions as lines.}
 \label{fig:drawdown}
 \end{figure}
 
@@ -602,7 +602,7 @@ Model complexity and parameter variability qualify this response result (Figure~
 \begin{figure}
 \centering
 \includegraphics[width=\linewidth]{fig06_massachusetts_pathway_summary.pdf}
-\caption{Massachusetts summary for the interpretation models. Panels report pooled log model factor dispersion, BIC preference counts across the four main interpretation models, lognormal parameter COV for fitted transmissivity and storage, and competing BIC support relative to lagging Darcy without leakage.}
+\caption{Massachusetts interpretation-model summary through (a) pooled log model factor dispersion; (b) BIC preference counts across the four main interpretation models; (c) lognormal parameter COV for fitted transmissivity and storage; and (d) relative BIC support against lagging Darcy without leakage.}
 \label{fig:variancecov}
 \end{figure}
 \FloatBarrier
@@ -614,7 +614,7 @@ Lovelock Valley provides the independent basin fill field case. The retained rec
 \begin{figure}
 \centering
 \includegraphics[width=\linewidth]{fig07_lovelock_response_hydrographs.pdf}
-\caption{Lovelock Valley MWP2 observed drawdown/recovery and fitted response curves under the four main interpretation models. Panels show the seven selected observation wells ordered by distance from pumping Well 10. Points are measured responses, lines show the four model predictions, the shaded interval marks the pumping period, and the dotted line marks shutoff.}
+\caption{Lovelock Valley MWP2 observed drawdown and recovery responses with fitted curves under the four main interpretation models across seven selected observation wells by distance from Well 10, with measured responses as points, four model predictions as lines, the shaded interval as the extraction period, and the dotted line as shutoff.}
 \label{fig:lovelockresponse}
 \end{figure}
 
@@ -625,7 +625,7 @@ Complexity-adjusted Lovelock support is concentrated in interpretations without 
 \begin{figure}
 \centering
 \includegraphics[width=\linewidth]{fig10_lovelock_pathway_summary.pdf}
-\caption{Lovelock Valley summary for the interpretation models. Panels report pooled log model factor dispersion, BIC preference counts across the four main interpretation models, lognormal parameter COV for fitted transmissivity and storage, and competing BIC support relative to lagging Darcy without leakage.}
+\caption{Lovelock Valley interpretation-model summary through (a) pooled log model factor dispersion; (b) BIC preference counts across the four main interpretation models; (c) lognormal parameter COV for fitted transmissivity and storage; and (d) relative BIC support against lagging Darcy without leakage.}
 \label{fig:lovelocksummary}
 \end{figure}
 \FloatBarrier
@@ -639,7 +639,7 @@ The final synthesis identifies transformation uncertainty as a reporting issue i
 \begin{figure}
 \centering
 \includegraphics[width=\linewidth]{fig11_two_case_synthesis.pdf}
-\caption{Validation synthesis based on the Massachusetts fractured bedrock case and the Lovelock Valley basin fill case. Panels compare pooled log model factor dispersion, BIC preference counts by well, support for models that include leakage, transmissivity COV, storage COV, and the scope of inference separating response support, leakage support, parameter interpretation, and spatial transfer availability.}
+\caption{Validation synthesis from the Massachusetts fractured bedrock case and the Lovelock Valley basin-fill case through (a) pooled log model factor dispersion; (b) BIC preference counts by well; (c) support for leakage-inclusive models; (d) transmissivity COV; (e) storage COV; and (f) inference scope across response support, leakage support, parameter interpretation, and spatial transfer availability.}
 \label{fig:fieldexternal}
 \end{figure}
 
@@ -648,7 +648,7 @@ After the two field evidence chains are established, field applicability screeni
 \begin{figure}
 \centering
 \includegraphics[width=\linewidth]{fig16_mf6_field_applicability.pdf}
-\caption{Field application of scenario-conditioned transformation model factors after the field evidence chains have been established. Panel (a) maps the two field cases to numerical benchmark classes and applicability levels. Panel (b) shows the matched transmissivity and storage model factor COV values used as field sensitivity brackets or conservative priors. Panel (c) reports field BIC support for the four analytical interpretations. Panel (d) compares inherited 95th percentile capacity and response time factors from the model averaged decision diagnostic. The figure identifies where benchmark factors are carried into the field interpretation.}
+\caption{Field application of scenario-conditioned transformation model factors after field evidence-chain establishment through (a) assignment of the two field cases to numerical benchmark classes and applicability levels; (b) matched transmissivity and storage model factor COV values as field sensitivity brackets or conservative priors; (c) field BIC support for the four analytical interpretations; and (d) inherited 95th percentile capacity and response-time factors from the model-averaged decision diagnostic. The figure identifies where benchmark factors enter the field interpretation.}
 \label{fig:mf6fieldapp}
 \end{figure}
 \FloatBarrier
@@ -666,7 +666,7 @@ The model weights also show that the decision diagnostic is not driven by always
 \begin{figure}
 \centering
 \includegraphics[width=\linewidth]{fig12_decision_consequence.pdf}
-\caption{Model-averaged propagation of aquifer test interpretation uncertainty to management-relevant hydraulic quantities. (a) Mean variance window BMA weights for the four analytical interpretations. (b) Median and 95th percentile hydraulic diffusivity spread, expressed as $D_{95}/D_{05}$ with $D=T/S$. (c) Median robust hydraulic control capacity factor under strict BIC and variance window weighting. (d) Mean variance window BMA probability that a selected interpretation underestimates hydraulic control capacity or misses an earlier hydraulic response.}
+\caption{Model-averaged propagation of aquifer-test interpretation uncertainty to management-relevant hydraulic quantities through (a) mean variance-window BMA weights for the four analytical interpretations; (b) median and 95th percentile hydraulic diffusivity spread, expressed as $D_{95}/D_{05}$ with $D=T/S$; (c) median robust hydraulic control capacity factor under strict BIC weights and variance-window weights; and (d) mean variance-window BMA probability of selected-interpretation underestimation of hydraulic control capacity or missed earlier hydraulic response.}
 \label{fig:decisionconsequence}
 \end{figure}
 
