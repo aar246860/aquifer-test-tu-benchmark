@@ -713,13 +713,9 @@ The two field cases demonstrate how the benchmark-conditioned framework changes 
 
 The model-averaged management diagnostic shows why the upstream drawdown-to-parameter conversion matters for groundwater calculations. Under variance window weighting of the four formal interpretations, the median robust hydraulic control capacity factor was 1.60 in Massachusetts and 1.18 in Lovelock Valley, with 95th percentile factors of 2.73 and 4.52. The median response-time factor was 1.85 and 4.05, with 95th percentile factors of 3.32 and 8.79. Aquifer-test reports should therefore state the interpretation model, response residual structure, benchmark transfer support, parameter spread, validation scope, and inherited decision consequence before fitted parameters are treated as direct hydrogeologic evidence or deterministic groundwater model inputs.
 
-\section*{CRediT authorship contribution statement}
-
-Ying-Fan Lin: Conceptualization, methodology, software, validation, formal analysis, investigation, data curation, visualization, writing--original draft, writing--review and editing, funding acquisition.
-
 \section*{Acknowledgments}
 
-YFL thanks the John Su Foundation for its support.
+YFL thanks the John Su Foundation for its support. This work was supported by the Taiwan National Science and Technology Council under grant numbers 113-2222-E-033-002-MY2 and 114-2221-E-033-005.
 
 \section*{Nomenclature}
 
@@ -777,52 +773,6 @@ YFL thanks the John Su Foundation for its support.
 \endgroup
 
 
-
-\section*{Code availability}
-
-Name of code/library: Aquifer-test transformation uncertainty benchmark workflow.
-
-Developer and contact: Ying-Fan Lin, Department of Civil Engineering, Chung Yuan Christian University, yflin1110@cycu.edu.tw.
-
-Hardware requirements: Standard Windows, Linux, or macOS workstation for the analytical and figure-generation workflow; the complete 10,000 scenario numerical benchmark benefits from a multi-core CPU and at least 16 GB RAM. GPU acceleration is not required.
-
-Program language: Python 3 and LaTeX. MODFLOW 6 is used as the numerical groundwater-flow simulator through Python workflow scripts.
-
-Software required: Python packages used by the scripts include NumPy, pandas, SciPy, scikit-learn, matplotlib, cmcrameri, FloPy, and Pillow. LaTeX compilation uses the Elsevier elsarticle class and BibTeX.
-
-Program size: The analysis scripts are approximately 0.47 MB. The public GitHub repository contains the manuscript source, figure-generation and analysis scripts, selected summary tables, and reproducibility instructions. The full generated benchmark and field-analysis tables are larger than 200 MB and are archived in HydroShare.
-
-Source code: \url{https://github.com/aar246860/aquifer-test-tu-benchmark}. The full reproducible data and software archive is available in HydroShare at \url{https://www.hydroshare.org/resource/3e8de7ff140c4ffab03163e215bb6634/}.
-
-\section*{Data availability}
-
-The data set and reproducible analysis archive supporting the analyses are available in HydroShare \citep{lin2026hydroshare}. The resource includes analysis code, copied Massachusetts pumping-test inputs, processed Lovelock Valley tables, MODFLOW 6 numerical benchmark tables, analytical verification tables, field diagnostic result tables, figures, and summary tables needed to reproduce the analyses. It is shared under the Creative Commons Attribution 4.0 International license (CC BY 4.0; \url{https://creativecommons.org/licenses/by/4.0/}). The Lovelock Valley raw data were originally published by the U.S. Geological Survey and are cited separately in this manuscript \citep{nadler2020data}.
-
-\section*{Declarations}
-
-\subsection*{Ethics approval}
-
-Not applicable. The analysis uses published field data and numerical benchmark simulations and does not involve human participants, human data, animals, or biological material.
-
-\subsection*{Consent to participate}
-
-Not applicable.
-
-\subsection*{Consent for publication}
-
-Not applicable.
-
-\subsection*{Competing interests}
-
-The author has no relevant financial or non-financial interests to disclose.
-
-\subsection*{Funding}
-
-This work was supported by the Taiwan National Science and Technology Council under grant numbers 113-2222-E-033-002-MY2 and 114-2221-E-033-005. The funders had no role in study design, data collection, analysis and interpretation, manuscript preparation, or the decision to submit the article for publication.
-
-\subsection*{Declaration of AI-assisted language editing}
-
-AI-assisted language tools were used only for English editing, consistency checks, and manuscript format conversion. The author reviewed and edited the content and takes full responsibility for the submitted manuscript.
 
 \nolinenumbers
 \bibliographystyle{elsarticle-harv}
