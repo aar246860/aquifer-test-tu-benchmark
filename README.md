@@ -6,9 +6,10 @@ This repository contains the Computers & Geosciences submission package and repr
 
 ## Contents
 
-- `main.tex`: Computers & Geosciences CAS-template manuscript source.
+- `main.tex`: Elsevier `elsarticle` manuscript source.
 - `main.pdf`: compiled manuscript PDF, without cover letter or highlights.
 - `manuscript_CAGEO.pdf`: duplicate manuscript PDF with an upload-friendly filename.
+- `manuscript_Elsevier.pdf`: duplicate manuscript PDF using the standard Elsevier `elsarticle` layout.
 - `cover_letter_CAGEO.tex` / `cover_letter_CAGEO.pdf`: cover letter source and compiled PDF.
 - `highlights_CAGEO.txt`: plain-text journal highlights.
 - `highlights_CAGEO.tex` / `highlights_CAGEO.pdf`: highlights source and compiled PDF.
@@ -42,7 +43,7 @@ pdflatex -interaction=nonstopmode supplementary_material.tex
 pdflatex -interaction=nonstopmode supplementary_material.tex
 ```
 
-The C&G manuscript uses the official CAS single-column template files: `cas-sc.cls`, `cas-common.sty`, and `cas-model2-names.bst`.
+The manuscript uses the standard Elsevier `elsarticle` template with author-year references through `elsarticle-harv.bst`.
 
 ## Core dependencies
 

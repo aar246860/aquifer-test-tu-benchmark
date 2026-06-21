@@ -1,15 +1,13 @@
-﻿%% Computers & Geosciences submission package generated from the TU_Lag manuscript.
-%% Official C&G checklist: single-column double-spaced manuscript,
-%% author-date references, code availability, and separate cover letter/highlights files.
-\documentclass[a4paper,fleqn]{cas-sc}
+﻿%% Elsevier submission manuscript generated from the TU_Lag manuscript.
+%% Separate cover letter and highlights PDFs are provided for Editorial Manager upload.
+\documentclass[preprint,12pt,authoryear]{elsarticle}
 
-\usepackage[authoryear]{natbib}
 \usepackage{amsmath,amssymb}
 \usepackage{booktabs,array}
 \usepackage{longtable}
 \usepackage{placeins}
 \usepackage{siunitx}
-\usepackage{url}
+\usepackage{xurl}
 \usepackage{lineno}
 \usepackage{graphicx}
 \usepackage{float}
@@ -17,31 +15,30 @@
 
 \setlength{\emergencystretch}{2em}
 
+\journal{Computers \& Geosciences}
+
 \begin{document}
-\let\WriteBookmarks\relax
-\def\floatpagepagefraction{1}
-\def\textpagefraction{.001}
-\shorttitle{Aquifer-test transformation uncertainty}
-\shortauthors{Lin}
 
-\title [mode = title]{A reproducible benchmark for transformation uncertainty in aquifer-test parameter inference}
+\begin{frontmatter}
 
-\author[1]{Ying-Fan Lin}
+\title{A reproducible benchmark for transformation uncertainty in aquifer-test parameter inference}
+
+\author[inst1]{Ying-Fan Lin\corref{cor1}}
+\cortext[cor1]{Corresponding author.}
 \ead{yflin1110@cycu.edu.tw}
-\credit{Conceptualization, methodology, software, validation, formal analysis, investigation, data curation, visualization, writing--original draft, writing--review and editing, funding acquisition.}
 
-\address[1]{Department of Civil Engineering, Chung Yuan Christian University, Taoyuan, Taiwan}
+\address[inst1]{Department of Civil Engineering, Chung Yuan Christian University, Taoyuan, Taiwan}
 
 \begin{abstract}
 Aquifer-test transmissivity and storage are not direct observations; they are inferred by fitting a response model to drawdown. This paper presents a reproducible computational benchmark for quantifying how that drawdown-to-parameter transformation affects inferred aquifer properties before they enter groundwater models, pumping-capacity calculations, or response-time estimates. Four analytical interpretations--Theis confined flow, Hantush--Jacob leakage, lagging Darcy without leakage, and lagging Darcy with leakage--are fitted to controlled numerical responses and two field pumping tests. A 10,000 scenario groundwater-flow ensemble generated 160,012 fitted interpretation records across homogeneous, leaky, finite-boundary, heterogeneous, and combined settings. The benchmark provides support-matched reference parameters, analytical limiting checks, grid sensitivity checks, and scenario-conditioned model factors. Analytical verification confirmed physical consistency in 22 of 25 limiting cases, and numerical responses aligned with analytical references in 30 of 32 configurations. Benchmark-transfer regressions predicted the 90th percentile absolute log model factor with cross-validated $R^2$ values of 0.48, 0.51, and 0.55 for transmissivity, storage, and response time. Application to the Massachusetts fractured-bedrock and Lovelock Valley basin-fill cases produced benchmark-conditioned model-factor COV values of 0.61--0.90 and 0.31--0.51, respectively. Model-averaged decision diagnostics showed that the selected interpretation can understate hydraulic capacity and response-time spread. The workflow treats lagging Darcy as one candidate interpretation, not a universal replacement, and reports transformation uncertainty through response residuals, benchmark support, field applicability, and inherited decision consequences.
 \end{abstract}
 
-\begin{keywords}
+\begin{keyword}
 Aquifer testing \sep Computational hydrogeology \sep Uncertainty quantification \sep Numerical benchmark \sep Model-form error \sep Reproducible workflow
-\end{keywords}
+\end{keyword}
 
-\maketitle
-\printcredits
+\end{frontmatter}
+
 \doublespacing
 \linenumbers
 
@@ -716,6 +713,10 @@ The two field cases demonstrate how the benchmark-conditioned framework changes 
 
 The model-averaged management diagnostic shows why the upstream drawdown-to-parameter conversion matters for groundwater calculations. Under variance window weighting of the four formal interpretations, the median robust hydraulic control capacity factor was 1.60 in Massachusetts and 1.18 in Lovelock Valley, with 95th percentile factors of 2.73 and 4.52. The median response-time factor was 1.85 and 4.05, with 95th percentile factors of 3.32 and 8.79. Aquifer-test reports should therefore state the interpretation model, response residual structure, benchmark transfer support, parameter spread, validation scope, and inherited decision consequence before fitted parameters are treated as direct hydrogeologic evidence or deterministic groundwater model inputs.
 
+\section*{CRediT authorship contribution statement}
+
+Ying-Fan Lin: Conceptualization, methodology, software, validation, formal analysis, investigation, data curation, visualization, writing--original draft, writing--review and editing, funding acquisition.
+
 \section*{Acknowledgments}
 
 YFL thanks the John Su Foundation for its support.
@@ -787,7 +788,7 @@ Hardware requirements: Standard Windows, Linux, or macOS workstation for the ana
 
 Program language: Python 3 and LaTeX. MODFLOW 6 is used as the numerical groundwater-flow simulator through Python workflow scripts.
 
-Software required: Python packages used by the scripts include NumPy, pandas, SciPy, scikit-learn, matplotlib, cmcrameri, FloPy, and Pillow. LaTeX compilation uses the Elsevier CAS class and BibTeX.
+Software required: Python packages used by the scripts include NumPy, pandas, SciPy, scikit-learn, matplotlib, cmcrameri, FloPy, and Pillow. LaTeX compilation uses the Elsevier elsarticle class and BibTeX.
 
 Program size: The analysis scripts are approximately 0.47 MB. The public GitHub repository contains the manuscript source, figure-generation and analysis scripts, selected summary tables, and reproducibility instructions. The full generated benchmark and field-analysis tables are larger than 200 MB and are archived in HydroShare.
 
@@ -824,9 +825,10 @@ This work was supported by the Taiwan National Science and Technology Council un
 AI-assisted language tools were used only for English editing, consistency checks, and manuscript format conversion. The author reviewed and edited the content and takes full responsibility for the submitted manuscript.
 
 \nolinenumbers
-\bibliographystyle{cas-model2-names}
+\bibliographystyle{elsarticle-harv}
 \bibliography{references}
 
 \end{document}
+
 
 
