@@ -7,9 +7,11 @@ This repository contains the Computers & Geosciences submission package and repr
 ## Contents
 
 - `main.tex`: Computers & Geosciences CAS-template manuscript source.
-- `main.pdf`: compiled manuscript PDF, after local build.
+- `main.pdf`: compiled manuscript PDF, without cover letter or highlights.
+- `manuscript_CAGEO.pdf`: duplicate manuscript PDF with an upload-friendly filename.
 - `cover_letter_CAGEO.tex` / `cover_letter_CAGEO.pdf`: cover letter source and compiled PDF.
-- `highlights_CAGEO.txt`: journal highlights.
+- `highlights_CAGEO.txt`: plain-text journal highlights.
+- `highlights_CAGEO.tex` / `highlights_CAGEO.pdf`: highlights source and compiled PDF.
 - `authorship_statement_CAGEO.txt`: CRediT authorship statement.
 - `data_and_code_availability_CAGEO.txt`: submission data/code statement.
 - `supplementary_material.tex` / `supplementary_material.pdf`: supplementary material source and PDF.
@@ -30,9 +32,14 @@ The HydroShare archive contains the larger MODFLOW 6 benchmark tables, field dia
 Run from this folder:
 
 ```powershell
-latexmk -pdf -interaction=nonstopmode main.tex
-latexmk -pdf -interaction=nonstopmode supplementary_material.tex
+pdflatex -interaction=nonstopmode main.tex
+bibtex main
+pdflatex -interaction=nonstopmode main.tex
+pdflatex -interaction=nonstopmode main.tex
 pdflatex -interaction=nonstopmode cover_letter_CAGEO.tex
+pdflatex -interaction=nonstopmode highlights_CAGEO.tex
+pdflatex -interaction=nonstopmode supplementary_material.tex
+pdflatex -interaction=nonstopmode supplementary_material.tex
 ```
 
 The C&G manuscript uses the official CAS single-column template files: `cas-sc.cls`, `cas-common.sty`, and `cas-model2-names.bst`.

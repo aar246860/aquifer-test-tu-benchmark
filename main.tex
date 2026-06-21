@@ -1,6 +1,6 @@
 ﻿%% Computers & Geosciences submission package generated from the TU_Lag manuscript.
-%% Official C&G checklist: cover letter, highlights, authorship statement,
-%% single-column double-spaced manuscript, author-date references, and code availability.
+%% Official C&G checklist: single-column double-spaced manuscript,
+%% author-date references, code availability, and separate cover letter/highlights files.
 \documentclass[a4paper,fleqn]{cas-sc}
 
 \usepackage[authoryear]{natbib}
@@ -35,32 +35,6 @@
 \begin{abstract}
 Aquifer-test transmissivity and storage are not direct observations; they are inferred by fitting a response model to drawdown. This paper presents a reproducible computational benchmark for quantifying how that drawdown-to-parameter transformation affects inferred aquifer properties before they enter groundwater models, pumping-capacity calculations, or response-time estimates. Four analytical interpretations--Theis confined flow, Hantush--Jacob leakage, lagging Darcy without leakage, and lagging Darcy with leakage--are fitted to controlled numerical responses and two field pumping tests. A 10,000 scenario groundwater-flow ensemble generated 160,012 fitted interpretation records across homogeneous, leaky, finite-boundary, heterogeneous, and combined settings. The benchmark provides support-matched reference parameters, analytical limiting checks, grid sensitivity checks, and scenario-conditioned model factors. Analytical verification confirmed physical consistency in 22 of 25 limiting cases, and numerical responses aligned with analytical references in 30 of 32 configurations. Benchmark-transfer regressions predicted the 90th percentile absolute log model factor with cross-validated $R^2$ values of 0.48, 0.51, and 0.55 for transmissivity, storage, and response time. Application to the Massachusetts fractured-bedrock and Lovelock Valley basin-fill cases produced benchmark-conditioned model-factor COV values of 0.61--0.90 and 0.31--0.51, respectively. Model-averaged decision diagnostics showed that the selected interpretation can understate hydraulic capacity and response-time spread. The workflow treats lagging Darcy as one candidate interpretation, not a universal replacement, and reports transformation uncertainty through response residuals, benchmark support, field applicability, and inherited decision consequences.
 \end{abstract}
-
-\begin{coverletter}
-Dear Editors-in-Chief,
-
-Please consider the enclosed manuscript, "A reproducible benchmark for transformation uncertainty in aquifer-test parameter inference," for exclusive consideration as a research article in Computers \& Geosciences.
-
-The manuscript addresses a computational hydrogeology problem at the interface between numerical groundwater modeling, analytical aquifer-test interpretation, and uncertainty quantification. Aquifer-test transmissivity and storage are commonly used as inputs to groundwater models and engineering calculations, but those quantities are inferred through interpretation models rather than observed directly. The paper provides a reproducible benchmark workflow for quantifying the transformation uncertainty introduced during this drawdown-to-parameter conversion.
-
-The contribution combines a 10,000 scenario groundwater-flow benchmark, analytical limiting checks, grid-sensitivity checks, four analytical interpretation pathways, field diagnostics for two public pumping-test cases, and model-averaged hydraulic capacity and response-time diagnostics. The computational element is central to the paper: the benchmark supplies support-matched reference parameters and scenario-conditioned model factors, while the field workflow transfers those factors only where response diagnostics support comparable benchmark classes.
-
-The submission follows the Computers \& Geosciences checklist. It is single column and double spaced, uses author-date references, includes highlights, an authorship statement, and a code availability section, and provides a public GitHub repository together with a HydroShare archive for the larger generated data products.
-
-Sincerely,
-
-Ying-Fan Lin
-Department of Civil Engineering, Chung Yuan Christian University
-Taoyuan, Taiwan
-Email: yflin1110@cycu.edu.tw
-\end{coverletter}
-
-\begin{highlights}
-\item Reproducible groundwater-flow benchmarks quantify aquifer-test transformation uncertainty.
-\item Benchmark-transfer regressions map response diagnostics to field model-factor scale.
-\item Two field cases test how inferred aquifer parameters inherit interpretation uncertainty.
-\item Decision diagnostics show effects on hydraulic capacity and groundwater response time.
-\end{highlights}
 
 \begin{keywords}
 Aquifer testing \sep Computational hydrogeology \sep Uncertainty quantification \sep Numerical benchmark \sep Model-form error \sep Reproducible workflow
