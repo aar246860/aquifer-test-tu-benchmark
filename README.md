@@ -1,32 +1,50 @@
-﻿# Aquifer-test transformation uncertainty benchmark
+# Aquifer-test transformation uncertainty benchmark
 
 This repository contains the Computers & Geosciences submission package and reproducibility scaffold for the manuscript:
 
 **A reproducible benchmark for transformation uncertainty in aquifer-test parameter inference**
 
-## Contents
+The code supports a computational hydrogeology workflow that quantifies how pumping-test drawdown records are transformed into apparent aquifer parameters under four analytical interpretation pathways. The public repository contains the manuscript source, analysis scripts, selected summary tables, figures, and a lightweight quick test. Larger generated benchmark and field-analysis tables are archived in HydroShare.
 
-- `main.tex`: Elsevier `elsarticle` manuscript source.
+## Repository layout
+
+- `main.tex`: CAGEO CAS single-column manuscript source.
 - `main.pdf`: compiled manuscript PDF, without cover letter or highlights.
-- `manuscript_CAGEO.pdf`: duplicate manuscript PDF with an upload-friendly filename.
-- `manuscript_Elsevier.pdf`: duplicate manuscript PDF using the standard Elsevier `elsarticle` layout.
-- `cover_letter_CAGEO.tex` / `cover_letter_CAGEO.pdf`: cover letter source and compiled PDF.
-- `highlights_CAGEO.txt`: plain-text journal highlights.
-- `highlights_CAGEO.tex` / `highlights_CAGEO.pdf`: highlights source and compiled PDF.
-- `authorship_statement_CAGEO.txt`: CRediT authorship statement.
-- `data_and_code_availability_CAGEO.txt`: submission data/code statement.
+- `cover_letter_CAGEO.tex` / `cover_letter_CAGEO.pdf`: cover letter source and PDF.
+- `highlights_CAGEO.tex` / `highlights_CAGEO.pdf`: highlights source and PDF.
+- `authorship_statement_CAGEO.txt`: CRediT authorship statement for upload.
 - `supplementary_material.tex` / `supplementary_material.pdf`: supplementary material source and PDF.
-- `analysis/`: Python scripts used for analytical fitting, numerical benchmark postprocessing, figure generation, and QA.
-- `tables/`: selected small summary tables needed for quick inspection. Full generated tables are hosted in HydroShare because several benchmark outputs exceed normal GitHub file-size limits.
+- `analysis/`: Python scripts for analytical fitting, numerical benchmark postprocessing, figure generation, and QA.
+- `examples/quick_test.py`: lightweight repository compliance and reproducibility test.
+- `tables/`: selected small summary tables used by the quick test and manuscript figures.
 - `fig*.pdf`: manuscript and supplementary figures.
+- `LICENSE`: MIT license for the code.
 
-## Full archive
+## Quick test
 
-The full reproducible data and software archive is available in HydroShare:
+The quick test does not rerun the full 10,000-scenario MODFLOW 6 benchmark. It verifies that the shipped summary tables contain the expected benchmark, transfer-regression, and field-management outputs.
 
-https://www.hydroshare.org/resource/3e8de7ff140c4ffab03163e215bb6634/
+Run from this folder:
 
-The HydroShare archive contains the larger MODFLOW 6 benchmark tables, field diagnostic outputs, and generated results used by the manuscript.
+```powershell
+python examples/quick_test.py
+```
+
+Expected output:
+
+```text
+CAGEO quick test passed.
+Quality-control rows: 40
+Regression targets: p90_abs_lnM_T=0.48, p90_abs_lnM_S=0.51, p90_abs_lnM_response_time=0.55
+Field cases: Lovelock Valley, Massachusetts
+Screened model-factor rows: 40
+```
+
+## Installation for full workflows
+
+Use Python 3. The analysis scripts use NumPy, pandas, SciPy, scikit-learn, matplotlib, cmcrameri, FloPy, and Pillow. MODFLOW 6 is required only for rerunning the numerical groundwater-flow simulations.
+
+The lightweight quick test uses only the Python standard library.
 
 ## Build the manuscript
 
@@ -43,11 +61,15 @@ pdflatex -interaction=nonstopmode supplementary_material.tex
 pdflatex -interaction=nonstopmode supplementary_material.tex
 ```
 
-The manuscript uses the standard Elsevier `elsarticle` template with author-year references through `elsarticle-harv.bst`.
+The manuscript uses the CAGEO CAS single-column template with author-date references through `cas-model2-names.bst`.
 
-## Core dependencies
+## Full archive
 
-The Python workflow uses Python 3 with NumPy, pandas, SciPy, scikit-learn, matplotlib, cmcrameri, FloPy, and Pillow. MODFLOW 6 is required for rerunning the numerical groundwater-flow simulations.
+The full reproducible data and software archive is available in HydroShare:
+
+https://www.hydroshare.org/resource/3e8de7ff140c4ffab03163e215bb6634/
+
+The HydroShare archive contains the larger MODFLOW 6 benchmark tables, field diagnostic outputs, and generated results used by the manuscript.
 
 ## License
 
